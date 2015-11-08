@@ -1,0 +1,52 @@
+html(ng-app='zihaow')
+	head
+		//- META DATA
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+
+		//- BASE URL
+		base(href='/')
+
+		//- TITLE BAR
+		//- TODO favicon
+		title Zihao Wu
+
+		//- Font
+		link(href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah', rel='stylesheet', type='text/css')
+		//-link(href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,700,400italic,700italic,900,900italic', rel='stylesheet', type='text/css')
+		//- STYLES
+		link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css', rel='stylesheet')
+		link(rel='stylesheet', href='main.css')
+		
+		//- JAVASCRIPT
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+		script(src='angular.js')
+		script(src='angular-route.js')
+		script(src='app.js')
+
+		//- Controllers
+		script(src='controllers/HomeController.js')
+		script(src='controllers/AboutController.js')
+		script(src='controllers/ExperienceController.js')
+		script(src='controllers/ContactController.js')
+	
+	body
+		.image-container(ng-show="showBackground")
+		.footer
+			.navigation-container
+				a(href='/') Home
+				a(href='/about') About
+				a(href='/experience') Experience
+				a(href='/contact') Contact
+			.social-container
+				a(href='https://www.flickr.com/photos/100481265@N05/', target='blank')
+					img(src='flickr.png', width='38', height='38')
+				a(href='https://www.facebook.com/zihao.wu.921', target='blank')
+					img(src='facebook.png', width='35', height='35')
+				a(href='https://ca.linkedin.com/pub/zihao-wu/92/920/854', target='blank')
+					img(src='linkin.png', width='38', height='38')
+
+		//- Angular View
+		.content(ng-view)
+		

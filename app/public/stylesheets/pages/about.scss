@@ -1,0 +1,188 @@
+body {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	margin: 0;
+	font-family: 'Open Sans', 'Helvetica';
+	font-weight: 100;
+	/* background: url('Zihao_Signature.png') no-repeat center center fixed; */
+}
+
+.mouseEffect {
+	animation: zoomIn 2s;
+}
+
+.page1-animation {
+	animation: slideOutLeft 1s;
+}
+
+.page1-animation.result {
+	animation: slideInLeft 1s;
+}
+
+.page2-animation {
+	animation: zoomOut 1s;
+}
+
+.page2-animation.result {
+	animation: rotateIn 1s;
+}
+
+.page3-animation {
+	animation: lightSpeedOut 1s;
+}
+
+.page3-animation.result {
+	animation: lightSpeedIn 1s;
+}
+
+.mouseEffect.result  {
+	animation: zoomIn 4s;
+}
+
+.rubberBandEffect.result {
+	animation: rubberBand 1s;
+	animation-delay: 0s;
+
+}
+
+/* used when hover is done. */
+.ease-in-out {
+	-webkit-transition: all 2.2s ease-out;
+  -moz-transition: all 2.2s ease-out;
+  -o-transition: all 2.2s ease-out;
+  -ms-transition: all 2.2s ease-out;
+  transition: all 2.2s ease-out;
+}
+
+.ease-in-out-hover {
+	transition-delay:1s;
+	-webkit-transition: all 1.2s ease-in-out;
+  -moz-transition: all 1.2s ease-in-out;
+  -o-transition: all 1.2s ease-in-out;
+  transition: all 1.2s ease-in-out;
+}
+
+.skills-container {
+	position: absolute;
+	top: calc(50% - 85px);
+	left: 50%;
+	height: 200px;
+	width: 400px;
+	margin: 0 0 0 -200px;
+	z-index: 0;
+}
+
+.main-contents:hover {
+  -webkit-opacity: 0.25;
+  -moz-opacity: 0.25;
+  opacity: 0.25;
+}
+
+p {
+	font-size: 20px;
+	text-align: center;
+}
+
+.appstore {
+	border: 1px solid #333333;
+	position: absolute;
+  left: calc(50% - 65px);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+	background:#FFFFFF;
+	color: #333333; 
+	font-size: 20px;
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: middle;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	text-align: center;
+}
+
+.skills-container a:hover {
+	text-decoration: none;
+	color: #FFFFFF; 
+	background:#333333;
+}
+
+.page1 {
+	position: absolute;
+	left: 25%;
+	top: calc(20% - 85px);
+	height: 100px;
+	width: 400px;
+	margin: 0 0 0 -200px;
+	z-index: 0;
+	opacity: 0.3;
+}
+
+.page2 {
+	position: absolute;
+	left: 50%;
+	top: calc(20% - 55px); 
+	height: 100px;
+	width: 400px;
+	margin: 0 0 0 -200px;
+	z-index: 0;
+	opacity: 0.3;
+}
+
+.page3 {
+	position: absolute;
+	left: 75%;
+	top: calc(20% - 85px);
+	height: 100px;
+	width: 400px;
+	margin: 0 0 0 -200px;
+	z-index: 0;
+	opacity: 0.3;
+}
+
+/* z-index for a page hover. */
+.page-hover:hover {
+	z-index: 1;
+	opacity: 1;
+}
+
+/* hover properties for pages. */
+.page-a-hover:hover {
+	text-decoration: none;
+	color: #333333; 
+	background:#FFFFFF;
+	border: 1px solid #333333; 
+}
+
+/* universal properties for pages. */
+.page-general {
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	background:#FFFFFF;
+	color: #FFFFFF; 
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: middle;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	text-align: center;
+	border: 1px solid #FFFFFF;
+}
+
+/* paddings for pages. */
+.pages-border-property {
+	position: absolute;
+	font-size: 14px;
+	padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
