@@ -115,11 +115,18 @@ body .social-container a {
 }
 
 /* line 94, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
-body .social-container img:hover {
-  opacity: 1;
+body .social-container img {
+  transition: 0.5s;
 }
 
-/* line 99, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
+/* line 98, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
+body .social-container img:hover {
+  opacity: 1;
+  box-shadow: 0px 0px 25px #5D0C0C;
+  transition: 0.5s;
+}
+
+/* line 106, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
 body .percentage-rectangle {
   position: absolute;
   background-color: #232324;
@@ -135,7 +142,7 @@ body .percentage-rectangle {
   bottom: 97px;
 }
 
-/* line 114, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
+/* line 121, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
 body .percentage-triangle {
   left: calc(50% - 8px);
   bottom: 89px;
