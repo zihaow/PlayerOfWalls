@@ -1,7 +1,10 @@
-.text-container.fadeInDown.animated(style='animation-delay: 40s;')
+.image-container(ng-show="showBackground")
+.skip-photo(ng-show="skipPhoto")
+  a(ng-click="skip()") Skip
+.text-container(class="fadeInDown animated")
   p I consider every photograph taken as an act of act.
   p.name Zihao Wu
-ul.cb-slideshow
+ul.cb-slideshow(ng-show="showSlideShow")
   li
     span.fadeInDown.animated
     div English Bay Sunset

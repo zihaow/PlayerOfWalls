@@ -1,10 +1,24 @@
 .text-container {
 	width: 350px;
-	height: 60px;
+	height: 100px;
 	position:absolute;
 	left: 50%;
 	top: 20%;
 	margin: 0 0 0 -175px;
+}
+
+.skip-photo {
+	position: absolute;
+	z-index: 10;
+	top: calc(50% - 21px);
+  left: calc(50% - 27.5px);
+
+	a {
+		text-decoration: none;
+		font-size: 30px;
+		cursor: pointer;
+		color: #ffffff;
+	}
 }
 
 p {
@@ -15,8 +29,7 @@ p {
 .name {
 	font-size: 15px;
 	font-weight: 100;
-	position: relative;
-	left: 60%;
+	float: right;
 }
 
 .cb-slideshow,
@@ -310,7 +323,7 @@ p {
 
 @media screen and (max-width: 1140px) { 
 	.cb-slideshow li div{ 
-		font-size: 20px 
+		font-size: 17px 
 	}
 }
 
