@@ -42,22 +42,29 @@ body .footer {
   position: fixed;
   width: 100%;
   height: 85px;
-  background-color: #2E2E2F;
-  opacity: 0.9;
+  background-color: #0D0D0D;
+  opacity: 0.1;
   z-index: 10;
+  transition: 1s;
 }
 
-/* line 35, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
+/* line 36, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
+body .footer:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/* line 43, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
 body .footer-animation.result {
   animation: bounce 1s;
 }
 
-/* line 39, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
+/* line 47, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
 body .social-animation.result {
   animation: flip 1s;
 }
 
-/* line 43, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
+/* line 51, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
 body .navigation-container {
   margin-bottom: 20px;
   position: relative;
@@ -71,7 +78,7 @@ body .navigation-container {
   border-bottom-left-radius: 5px;
 }
 
-/* line 55, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
+/* line 63, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
 body .navigation-container a {
   display: inline-block;
   padding: 9px;
@@ -84,7 +91,7 @@ body .navigation-container a {
   -moz-transition: 0.5s;
 }
 
-/* line 67, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
+/* line 75, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
 body .navigation-container a:hover {
   background-color: #2E2E2F;
   opacity: 1;
@@ -98,7 +105,7 @@ body .navigation-container a:hover {
   text-shadow: -1px 1px 8px #ffffff, 1px -1px 8px #ffffff;
 }
 
-/* line 81, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
+/* line 89, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
 body .social-container {
   position: absolute;
   right: 20px;
@@ -108,25 +115,25 @@ body .social-container {
   opacity: 1;
 }
 
-/* line 89, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
+/* line 97, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
 body .social-container a {
   text-decoration: none;
   margin-right: 5px;
 }
 
-/* line 94, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
+/* line 102, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
 body .social-container img {
   transition: 0.5s;
 }
 
-/* line 98, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
+/* line 106, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
 body .social-container img:hover {
   opacity: 1;
   box-shadow: 0px 0px 25px #5D0C0C;
   transition: 0.5s;
 }
 
-/* line 106, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
+/* line 114, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
 body .percentage-rectangle {
   position: absolute;
   background-color: #232324;
@@ -142,7 +149,7 @@ body .percentage-rectangle {
   bottom: 97px;
 }
 
-/* line 121, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
+/* line 129, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/index.scss */
 body .percentage-triangle {
   left: calc(50% - 8px);
   bottom: 89px;
@@ -789,6 +796,141 @@ p {
   padding-right: 5px;
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+/* line 1, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+.firstPage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("gov.png");
+  background-size: cover;
+  font-family: lato;
+}
+
+/* line 11, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+.firstPage .intro {
+  width: 600px;
+  height: 150px;
+  position: absolute;
+  top: calc(35% - 75px);
+  left: calc(50% - 300px);
+}
+
+/* line 18, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+.firstPage .intro p {
+  font-size: 22px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 100;
+}
+
+/* line 25, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+.firstPage .intro p:hover {
+  animation: jello 1s;
+}
+
+/* line 30, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+.firstPage .option-section {
+  width: 400px;
+  height: 30px;
+  position: absolute;
+  top: calc(35% + 75px);
+  left: calc(50% - 190px);
+}
+
+/* line 37, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+.firstPage .option-section a {
+  display: inline-block;
+  font-weight: 100;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 3px 15px 3px 15px;
+  margin-right: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* line 51, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+.firstPage .option-section a:hover {
+  transition: 0.5s;
+  text-shadow: -1px 1px 8px #ffffff, 1px -1px 8px #ffffff;
+}
+
+/* line 57, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+.firstPage .section {
+  width: 600px;
+  height: 195px;
+  padding: 3px 10px 3px 10px;
+  position: absolute;
+  top: calc(35% + 130px);
+  left: calc(50% - 300px);
+  border: 1px solid #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  transition: 2.5s;
+}
+
+/* line 69, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+.firstPage .section a {
+  padding: 3px 10px 3px 10px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+/* line 79, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+.firstPage .scroll {
+  position: absolute;
+  bottom: 80px;
+  left: calc(50% - 37.5px);
+  animation-iteration-count: 1;
+}
+
+/* line 85, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+.firstPage .scroll a {
+  display: block;
+  font-size: 30px;
+  font-family: lato;
+  font-weight: 700;
+  color: #ffffff;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+/* line 96, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+.firstPage .scroll-v {
+  position: absolute;
+  bottom: 45px;
+  left: calc(50% - 10.5px);
+  animation-iteration-count: 1;
+}
+
+/* line 102, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+.firstPage .scroll-v a {
+  display: block;
+  font-size: 30px;
+  font-family: lato;
+  font-weight: 700;
+  color: #ffffff;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+/* line 114, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+.secondPage {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
 }
 
 /*!
