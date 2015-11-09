@@ -7,9 +7,15 @@ app.controller('ExperienceController',function($scope, $rootScope, $route, $http
 
 	// overflow auto 
 	$(document).ready(function() {
-   $('.content').css("overflow", "auto");
-	});
-
+  	$('.content').css("overflow", "scroll");
+   
+		$(window).scroll(function() {
+		  if($(window).scrollTop() + $(window).height() == $(document).height()) {
+		    alert("bottom!");
+		  }
+		});
+  });
+	
 	$scope.showConfident = function() {
 		$('.confidence-section').removeClass("slideOutRight animated");
 		$('.confidence-section').addClass("slideInLeft animated");
