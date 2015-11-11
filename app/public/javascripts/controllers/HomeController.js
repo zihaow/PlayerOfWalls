@@ -1,4 +1,4 @@
-app.controller('HomeController',function($scope, $rootScope, $route, $http){
+app.controller('HomeController',function($scope, $rootScope, $route, $http, $timeout){
 	
 	// INIT VARIABLES
 	$scope.showBackground = true;
@@ -16,4 +16,10 @@ app.controller('HomeController',function($scope, $rootScope, $route, $http){
 		$scope.skipPhoto = false;
 		$('.text-container').css("animation-delay", "2s");
 	};
+
+	// hide skip button once animation is done.
+	$timeout(function() {
+    $scope.skipPhoto = false;
+  }, 40000);
+
 });

@@ -1,0 +1,312 @@
+.experience-page {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	.firstPage {
+		position: absolute;
+		width: 100%;
+		height: 50%;
+		top: 0;
+		left: 0;
+		background-image: url('gov.png');
+		background-size: cover;
+		font-family: lato;
+
+		.intro {
+			width: 600px;
+	    height: 150px;
+	    position: absolute;
+	    top: calc(35% - 75px);
+	    left: calc(50% - 300px);
+
+			p {
+				font-size: 22px;
+				text-align: center;
+				color: #ffffff;
+				font-weight: 100;
+			}
+
+			p:hover {
+				animation: jello 1s;
+			}
+		}
+
+		.option-section {
+			width: 400px;
+			height: 30px;
+			position: absolute;
+			top: calc(35% + 75px);
+			left: calc(50% - 190px);
+			
+			a {
+				display: inline-block;
+				font-weight: 100;
+				color: #ffffff;
+				font-size: 15px;
+				padding: 3px 15px 3px 15px;
+				margin-right: 10px;
+				border: 1px solid #ffffff;
+				border-radius: 3px;
+				text-decoration: none;
+				cursor: pointer;
+				transition: 0.5s;
+			}
+
+			a:hover {
+				transition: 0.5s;
+				text-shadow: -1px 1px 8px #ffffff, 1px -1px 8px #ffffff;
+			}
+		}
+
+		.section {
+			width: 600px;
+	    height: 195px;
+	    padding: 3px 10px 3px 10px;
+	    position: absolute;
+	    top: calc(35% + 130px);
+	    left: calc(50% - 300px);
+	    border: 1px solid #ffffff;
+	    text-align: center;
+	    border-radius: 5px;
+	    transition: 2.5s;
+	    
+			a {
+				padding: 3px 10px 3px 10px;
+				text-align: center;
+				color: #ffffff;
+				font-size: 22px;
+				text-decoration: none;
+				
+			}
+		}
+
+		.scroll {
+			position: absolute;
+			bottom: 80px;
+			left: calc(50% - 37.5px);
+			animation-iteration-count:1;
+
+			a {
+				display: block;
+				font-size: 30px;
+				font-family: lato;
+				font-weight: 700;
+				color: #ffffff;
+				opacity: 0.5;
+				text-decoration: none;
+			}
+		}
+
+		.scroll-v {
+			position: absolute;
+			bottom: 45px;
+			left: calc(50% - 10.5px);
+			animation-iteration-count:1;
+
+			a {
+				display: block;
+				font-size: 30px;
+				font-family: lato;
+				font-weight: 700;
+				color: #ffffff;
+				opacity: 0.5;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.secondPage {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		height: 50%;
+		background-color: #ffffff;
+		background-size: cover;
+		font-family: lato;
+
+		.text-container-simpTek {
+			color: #130D0D;
+			position: absolute;
+			left: calc(50% - 250px);
+			top: calc(50% - 100px);
+			width: 500px;
+    	height: 200px;
+    	z-index: 100;
+
+			p {
+				font-size: 19px;
+		    text-align: center;
+		    font-weight: 400;
+			}
+
+			p:hover {
+				text-shadow: 0px 0px 20px #3C3232, 0px 0px 10px #fff;
+			}
+		}
+
+		.kayaking {
+			position: absolute;
+			top: 0;
+			background-image: url('k.jpg');
+			background-size: cover;
+			width: 40%;
+			height: 50%;
+			left: 0;
+			opacity: 0.7;
+			//background-size: 110%;
+			
+			.glyphicon {
+				font-size: 80px;
+				color: #ffffff;
+				position: absolute;
+				top: calc(50% - 40px);
+    		left: calc(50% - 40px);
+    		opacity: 0.7;
+			}
+		}
+
+		.kayaking:hover {
+			opacity: 1;
+			transition: 1.5s;
+			background-position: 0px -130px;
+			-webkit-filter: blur(0px);
+		  -moz-filter: blur(0px);
+		  -o-filter: blur(0px);
+		  -ms-filter: blur(0px);
+		  filter: blur(0px);
+			
+			.glyphicon {
+				display: none;
+			}
+		}
+		
+		.nebo {
+			position: absolute;
+			top: 0%;
+			width: 60%;
+			height: 50%;
+			left: 40%;
+			opacity: 0.7;
+			background-image: url('nebo.jpg');
+			background-size: 100%;
+			background-position: 0px -130px;
+			
+			.glyphicon {
+				font-size: 80px;
+				color: #ffffff;
+				position: absolute;
+				top: calc(50% - 40px);
+    		left: calc(50% - 40px);
+    		opacity: 0.7;
+			}
+		}
+
+		.nebo:hover {
+			opacity: 1;
+			transition: 1.5s;
+			background-size: 110%;
+			background-position: -20px -130px;
+			-webkit-filter: blur(0px);
+		  -moz-filter: blur(0px);
+		  -o-filter: blur(0px);
+		  -ms-filter: blur(0px);
+		  filter: blur(0px);
+			
+			.glyphicon {
+				display: none;
+			}
+		}
+		
+		.simptek {
+			position: absolute;
+			top: 50%;
+			width: 60%;
+			height: 50%;
+			left: 0;
+			opacity: 0.7;
+			background-image: url('simptek.jpg');
+			background-size: cover;
+			-moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      background-size: 110%;
+
+			.glyphicon {
+				font-size: 80px;
+				color: #ffffff;
+				position: absolute;
+				top: calc(50% - 40px);
+    		left: calc(50% - 40px);
+    		opacity: 0.7;
+			}
+		}
+
+		.simptek:hover {
+			opacity: 1;
+			transition: 1.5s;
+			background-size: 100%;
+			-webkit-filter: blur(0px);
+		  -moz-filter: blur(0px);
+		  -o-filter: blur(0px);
+		  -ms-filter: blur(0px);
+		  filter: blur(0px);
+			
+			.glyphicon {
+				display: none;
+			}
+		}
+		
+		.river {
+			position: absolute;
+			top: 50%;
+			width: 40%;
+			height: 50%;
+			left: 60%;
+			opacity: 0.7;
+			background-image: url('river.jpg');
+			background-size: 110%;
+			
+			
+			.glyphicon {
+				font-size: 80px;
+				color: #ffffff;
+				position: absolute;
+				top: calc(50% - 40px);
+    		left: calc(50% - 40px);
+    		opacity: 0.7;
+			}
+		}
+
+		.river:hover {
+			opacity: 1;
+			background-size: 120%;
+			-webkit-filter: blur(0px);
+		  -moz-filter: blur(0px);
+		  -o-filter: blur(0px);
+		  -ms-filter: blur(0px);
+		  filter: blur(0px);
+
+			.glyphicon {
+				display: none;
+			}
+		}
+	}
+}
+
+.blur {
+	-webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.transition {
+	transition: all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+}
