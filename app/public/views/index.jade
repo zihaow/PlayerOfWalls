@@ -7,9 +7,8 @@ html(ng-app='zihaow')
 		//- BASE URL
 		base(href='/')
 		//-base(href='/~zihaow')
-
-		//- TITLE BAR
-		//- TODO favicon
+		//- favicon
+		intercept-url(pattern='/favicon.ico', access='ROLE_ANONYMOUS')
 		title Zihao Wu
 
 		//- Font
@@ -17,6 +16,7 @@ html(ng-app='zihaow')
 		link(href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,700,400italic,700italic,900,900italic', rel='stylesheet', type='text/css')
 		//- STYLES
 		link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css', rel='stylesheet')
+		link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
 		link(rel='stylesheet', href='main.css')
 		
 		//- JAVASCRIPT
@@ -26,13 +26,17 @@ html(ng-app='zihaow')
 		script(src='angular-route.js')
 		script(src='app.js')
 		script(src='wow.min.js')
-
+		
 		//- Controllers
 		script(src='controllers/HomeController.js')
 		script(src='controllers/AboutController.js')
 		script(src='controllers/ExperienceController.js')
 		script(src='controllers/ContactController.js')
-	
+
+		//- Directives
+		script(src='directives/scroll.js')
+		script(src='directives/scrollCheck.js')
+
 	body
 		.footer
 			.navigation-container

@@ -1,21 +1,28 @@
-app.controller('ExperienceController',function($scope, $rootScope, $route, $http, $timeout){
+app.controller('ExperienceController',function($window, $scope, $rootScope, $route, $http, $timeout){
 	$scope.showBackground = false;
 	$scope.showConfidence = false;
 	$scope.showTeamwork = false;
 	$scope.showTimeManagement = false;
 	$scope.showScroll = false;
+	$scope.showSimpTek = true;
 
 	// overflow auto 
 	$(document).ready(function() {
-  	$('.content').css("overflow", "scroll");
-   
-		$(window).scroll(function() {
-		  if($(window).scrollTop() + $(window).height() == $(document).height()) {
-		    alert("bottom!");
-		  }
-		});
-  });
-	
+  	$('.content').css("overflow", "auto");
+  	var windowHeight = $(window).height();
+  	var halfHeight = windowHeight;
+  	windowHeight = windowHeight * 2;
+  	$('.content').css("height", windowHeight);
+  	
+   	// check if the user is on second page.
+   	$window.onscroll = function() {
+			if( $(window).scrollTop() >= halfHeight/2){ 	
+				console.log($(window).scrollTop());
+				console.log("on second page");
+			}
+		};
+	});
+
 	$scope.showConfident = function() {
 		$('.confidence-section').removeClass("slideOutRight animated");
 		$('.confidence-section').addClass("slideInLeft animated");
@@ -46,6 +53,14 @@ app.controller('ExperienceController',function($scope, $rootScope, $route, $http
 		$('.timeMgmt-section').addClass("zoomOutRight animated");
 	};
 
+	$scope.hideSimpTekk = function() {
+		$scope.showSimpTek = false;
+	};
+
+	$scope.showSimpTekk = function() {
+		$scope.showSimpTek = true;
+	};
+
 	// show scroll button after 5s.
 	$timeout(function() {
     $scope.showScroll = true;
@@ -56,6 +71,4 @@ app.controller('ExperienceController',function($scope, $rootScope, $route, $http
 		$('.scroll').addClass("rotateOutUpRight animated");
 		$('.scroll-v').addClass("rotateOutUpRight animated");
   }, 9000);
-
-
 });
