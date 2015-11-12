@@ -5,7 +5,7 @@ app.controller('ExperienceController',function($window, $scope, $rootScope, $rou
 	$scope.showTimeManagement = false;
 	$scope.showScroll = false;
 	$scope.showSimpTek = true;
-
+	
 	// overflow auto 
 	$(document).ready(function() {
   	$('.content').css("overflow", "auto");
@@ -13,6 +13,63 @@ app.controller('ExperienceController',function($window, $scope, $rootScope, $rou
   	var halfHeight = windowHeight;
   	windowHeight = windowHeight * 2;
   	$('.content').css("height", windowHeight);
+
+  	$(".kayaking").mouseenter(function(){
+        $('.kayaking').css("z-index", "200");
+        $('.kayaking').css("width", "100%");
+        $('.kayaking').css("height", "100%");
+				console.log("hovering");
+    });
+
+    $(".kayaking").mouseleave(function(){
+        $('.kayaking').css("z-index", "0");
+        $('.kayaking').css("width", "");
+        $('.kayaking').css("height", "");
+    });
+
+    $(".nebo").mouseenter(function(){
+        $('.nebo').css("z-index", "200");
+        $('.nebo').css("width", "100%");
+        $('.nebo').css("height", "100%");
+        $('.nebo').css("left", "0");
+    });
+
+    $(".nebo").mouseleave(function(){
+        $('.nebo').css("z-index", "0");
+        $('.nebo').css("width", "");
+        $('.nebo').css("height", "");
+        $('.nebo').css("left", "");
+    });
+
+    $(".simptek").mouseenter(function(){
+        $('.simptek').css("z-index", "200");
+        $('.simptek').css("width", "100%");
+        $('.simptek').css("height", "100%");
+        $('.simptek').css("top", "0");
+    });
+
+    $(".simptek").mouseleave(function(){
+        $('.simptek').css("z-index", "0");
+        $('.simptek').css("width", "");
+        $('.simptek').css("height", "");
+        $('.simptek').css("top", "");
+    });
+
+    $(".river").mouseenter(function(){
+        $('.river').css("z-index", "200");
+        $('.river').css("width", "100%");
+        $('.river').css("height", "100%");
+        $('.river').css("top", "0");
+        $('.river').css("left", "0");
+    });
+
+    $(".river").mouseleave(function(){
+        $('.river').css("z-index", "0");
+        $('.river').css("width", "");
+        $('.river').css("height", "");
+        $('.river').css("top", "");
+        $('.river').css("left", "");
+    });
   	
    	// check if the user is on second page.
    	$window.onscroll = function() {

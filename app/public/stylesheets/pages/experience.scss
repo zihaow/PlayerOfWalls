@@ -146,6 +146,21 @@
 			}
 		}
 
+		.glyphicon {
+			font-size: 80px;
+			color: #ffffff;
+			//position: absolute;
+			//top: calc(50% - 40px);
+  		//left: calc(50% - 40px);
+  		opacity: 0.7;
+		}
+
+		.kayag {
+			position: absolute;
+			top: calc(25% - 40px);
+  		left: calc(20% - 40px);
+		}
+
 		.kayaking {
 			position: absolute;
 			top: 0;
@@ -155,21 +170,10 @@
 			height: 50%;
 			left: 0;
 			opacity: 0.7;
-			//background-size: 110%;
-			
-			.glyphicon {
-				font-size: 80px;
-				color: #ffffff;
-				position: absolute;
-				top: calc(50% - 40px);
-    		left: calc(50% - 40px);
-    		opacity: 0.7;
-			}
 		}
 
 		.kayaking:hover {
 			opacity: 1;
-			transition: 1.5s;
 			background-position: 0px -130px;
 			-webkit-filter: blur(0px);
 		  -moz-filter: blur(0px);
@@ -180,6 +184,12 @@
 			.glyphicon {
 				display: none;
 			}
+		}
+
+		.nebog {
+			position: absolute;
+			top: calc(25% - 40px);
+  		left: calc(70% - 40px);
 		}
 		
 		.nebo {
@@ -190,24 +200,12 @@
 			left: 40%;
 			opacity: 0.7;
 			background-image: url('nebo.jpg');
-			background-size: 100%;
-			background-position: 0px -130px;
-			
-			.glyphicon {
-				font-size: 80px;
-				color: #ffffff;
-				position: absolute;
-				top: calc(50% - 40px);
-    		left: calc(50% - 40px);
-    		opacity: 0.7;
-			}
+			background-size: cover;
 		}
 
 		.nebo:hover {
 			opacity: 1;
-			transition: 1.5s;
-			background-size: 110%;
-			background-position: -20px -130px;
+			background-position: 0 -130px;
 			-webkit-filter: blur(0px);
 		  -moz-filter: blur(0px);
 		  -o-filter: blur(0px);
@@ -217,6 +215,12 @@
 			.glyphicon {
 				display: none;
 			}
+		}
+
+		.simpg {
+			position: absolute;
+			top: calc(75% - 40px);
+    	left: calc(30% - 40px);
 		}
 		
 		.simptek {
@@ -228,25 +232,10 @@
 			opacity: 0.7;
 			background-image: url('simptek.jpg');
 			background-size: cover;
-			-moz-transition: 0.5s;
-      -webkit-transition: 0.5s;
-      transition: 0.5s;
-      background-size: 110%;
-
-			.glyphicon {
-				font-size: 80px;
-				color: #ffffff;
-				position: absolute;
-				top: calc(50% - 40px);
-    		left: calc(50% - 40px);
-    		opacity: 0.7;
-			}
 		}
 
 		.simptek:hover {
 			opacity: 1;
-			transition: 1.5s;
-			background-size: 100%;
 			-webkit-filter: blur(0px);
 		  -moz-filter: blur(0px);
 		  -o-filter: blur(0px);
@@ -257,6 +246,12 @@
 				display: none;
 			}
 		}
+
+		.riverg {
+			position: absolute;
+			top: calc(75% - 40px);
+    	left: calc(80% - 40px);
+		}
 		
 		.river {
 			position: absolute;
@@ -266,22 +261,11 @@
 			left: 60%;
 			opacity: 0.7;
 			background-image: url('river.jpg');
-			background-size: 110%;
-			
-			
-			.glyphicon {
-				font-size: 80px;
-				color: #ffffff;
-				position: absolute;
-				top: calc(50% - 40px);
-    		left: calc(50% - 40px);
-    		opacity: 0.7;
-			}
+			background-size: cover;
 		}
 
 		.river:hover {
 			opacity: 1;
-			background-size: 120%;
 			-webkit-filter: blur(0px);
 		  -moz-filter: blur(0px);
 		  -o-filter: blur(0px);

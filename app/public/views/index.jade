@@ -11,6 +11,10 @@ html(ng-app='zihaow')
 		intercept-url(pattern='/favicon.ico', access='ROLE_ANONYMOUS')
 		title Zihao Wu
 
+		//- Loader
+		link(rel='stylesheet', href='http://css-spinners.com/css/spinner/gauge.css', type='text/css')
+		link(rel='stylesheet', href='http://css-spinners.com/css/spinner/circles.css', type='text/css')
+
 		//- Font
 		link(href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah', rel='stylesheet', type='text/css')
 		link(href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,700,400italic,700italic,900,900italic', rel='stylesheet', type='text/css')
@@ -54,6 +58,9 @@ html(ng-app='zihaow')
 
 		//- Angular View
 		.content(ng-view)
+		.showloadingView(ng-if="loadingView") 
+			.loading(style="position: absolute; width: 200px; height: 200px; top: calc(50% - 100px); left: calc(50% - 100px);")
+				.circles-loader(style="position: absolute; background-color: #F8971D; top: calc(50% - 16px); left: calc(50% - 20px);") 
 
 		script.
 			new WOW().init();

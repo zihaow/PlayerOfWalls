@@ -38,8 +38,15 @@ body {
 		transition: 0.5s;
 	}
 
-
-
+	.showloadingView {
+		position: fixed;
+		top: 0;
+	  left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: #FFFFFF;
+	}
+	
 	.footer-animation.result {
 		animation: bounce 1s;
 	}
