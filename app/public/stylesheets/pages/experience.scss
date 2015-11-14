@@ -129,16 +129,16 @@
 		.text-container-simpTek {
 			color: #130D0D;
 			position: absolute;
-			left: calc(50% - 250px);
+			left: calc(50% - 400px);
 			top: calc(50% - 100px);
-			width: 500px;
+			width: 800px;
     	height: 200px;
     	z-index: 100;
 
 			p {
-				font-size: 19px;
+				font-size: 25px;
 		    text-align: center;
-		    font-weight: 400;
+		    font-weight: 500;
 			}
 
 			p:hover {
@@ -149,9 +149,7 @@
 		.glyphicon {
 			font-size: 80px;
 			color: #ffffff;
-			//position: absolute;
-			//top: calc(50% - 40px);
-  		//left: calc(50% - 40px);
+			z-index: 200;
   		opacity: 0.7;
 		}
 
@@ -159,6 +157,9 @@
 			position: absolute;
 			top: calc(25% - 40px);
   		left: calc(20% - 40px);
+  		width: 80px;
+  		height: 80px;
+  		background-color: transparent;
 		}
 
 		.kayaking {
@@ -174,16 +175,13 @@
 
 		.kayaking:hover {
 			opacity: 1;
-			background-position: 0px -130px;
+			background-position: 0px -100px;
 			-webkit-filter: blur(0px);
 		  -moz-filter: blur(0px);
 		  -o-filter: blur(0px);
 		  -ms-filter: blur(0px);
 		  filter: blur(0px);
-			
-			.glyphicon {
-				display: none;
-			}
+		  z-index: 200;
 		}
 
 		.nebog {
@@ -205,16 +203,13 @@
 
 		.nebo:hover {
 			opacity: 1;
-			background-position: 0 -130px;
+			background-position: 0 -55px;
 			-webkit-filter: blur(0px);
 		  -moz-filter: blur(0px);
 		  -o-filter: blur(0px);
 		  -ms-filter: blur(0px);
 		  filter: blur(0px);
-			
-			.glyphicon {
-				display: none;
-			}
+		  z-index: 200;
 		}
 
 		.simpg {
@@ -231,7 +226,7 @@
 			left: 0;
 			opacity: 0.7;
 			background-image: url('simptek.jpg');
-			background-size: cover;
+			background-size: 110%;
 		}
 
 		.simptek:hover {
@@ -241,10 +236,8 @@
 		  -o-filter: blur(0px);
 		  -ms-filter: blur(0px);
 		  filter: blur(0px);
-			
-			.glyphicon {
-				display: none;
-			}
+		  background-size: 100%;
+		  z-index: 200;
 		}
 
 		.riverg {
@@ -271,10 +264,7 @@
 		  -o-filter: blur(0px);
 		  -ms-filter: blur(0px);
 		  filter: blur(0px);
-
-			.glyphicon {
-				display: none;
-			}
+		  z-index: 200;
 		}
 	}
 }
@@ -293,4 +283,411 @@
 	-ms-transition: all .5s ease-in-out;
 	-o-transition: all .5s ease-in-out;
 	-webkit-transition: all .5s ease-in-out;
+}
+
+/* ****************************************************************************************
+ * ************************************ Media Queries *********************************** 
+ ****************************************************************************************** */
+@media(max-width:767px){
+
+	.experience-page {
+		.secondPage {
+			.text-container-simpTek {
+				width: 500px;
+				left: calc(50% - 250px);
+				
+				p {
+					font-size: 19px;
+				}
+			}
+		}
+
+		.firstPage {
+			.intro {
+		    width: 500px;
+		    height: 100px;
+		    top: calc(35% - 50px);
+		    left: calc(50% - 250px);
+
+		    p {
+		    	font-size: 18px;
+		    }
+			}
+
+			.option-section {
+		    width: 336px;
+		    height: 30px;
+		    position: absolute;
+		    top: calc(35% + 60px);
+		    left: calc(50% - 163px);
+
+		    a {
+		    	font-size: 12px;
+		    	font-weight: 300;
+		    }
+			}
+
+			.section {
+		    width: 400px;
+		    height: 140px;
+		    position: absolute;
+		    top: calc(35% + 100px);
+		    left: calc(50% - 200px);
+		    
+		    a {
+		    	font-size: 15px;
+		    }
+			}
+
+			.scroll {
+				bottom: 66px;
+				left: calc(50% - 25.3px);
+			}
+
+			.scroll-v {
+		    bottom: 46px;
+		    left: calc(50% - 7px);
+		  }
+
+			.scroll a {
+				font-size: 20px;
+			}
+
+			.scroll-v a {
+				font-size: 20px;
+			}
+		}
+	}
+
+	body {
+		.footer {
+			height: 55px;
+		}
+
+		.navigation-container {
+			top: calc(50% - 15.5px);
+	    left: calc(50% - 110px);
+	    width: 220px;
+
+	    a {
+	    	padding: 6px;
+	    	font-size: 12px;
+	    }
+		}
+
+		.social-container {
+	    height: 30px;
+	    top: calc(50% - 15px);
+	    opacity: 1;
+	    right: 0;
+
+	    img {
+	    	width: 30px;
+	    	height: 30px;
+	    }
+		}
+	}
+}
+
+@media(min-width:768px){
+	.experience-page {
+		.secondPage {
+			.text-container-simpTek {
+				width: 500px;
+				left: calc(50% - 250px);
+				p {
+					font-size: 19px;
+				}
+			}
+		}
+
+		.firstPage {
+			.intro {
+		    width: 500px;
+		    height: 100px;
+		    top: calc(35% - 50px);
+		    left: calc(50% - 250px);
+
+		    p {
+		    	font-size: 18px;
+		    }
+			}
+
+			.option-section {
+		    width: 336px;
+		    height: 30px;
+		    position: absolute;
+		    top: calc(35% + 60px);
+		    left: calc(50% - 163px);
+
+		    a {
+		    	font-size: 12px;
+		    	font-weight: 300;
+		    }
+			}
+
+			.section {
+		    width: 400px;
+		    height: 140px;
+		    position: absolute;
+		    top: calc(35% + 100px);
+		    left: calc(50% - 200px);
+		    
+		    a {
+		    	font-size: 15px;
+		    }
+			}
+
+			.scroll {
+				bottom: 66px;
+				left: calc(50% - 25.3px);
+			}
+
+			.scroll-v {
+		    bottom: 46px;
+		    left: calc(50% - 7px);
+		  }
+
+			.scroll a {
+				font-size: 20px;
+			}
+
+			.scroll-v a {
+				font-size: 20px;
+			}
+		}
+	}
+
+	body {
+		.footer {
+			height: 55px;
+		}
+
+		.navigation-container {
+			top: calc(50% - 15.5px);
+	    left: calc(50% - 110px);
+	    width: 220px;
+
+	    a {
+	    	padding: 6px;
+	    	font-size: 12px;
+	    }
+		}
+
+		.social-container {
+	    height: 30px;
+	    top: calc(50% - 15px);
+	    opacity: 1;
+	    right: 0;
+
+	    img {
+	    	width: 30px;
+	    	height: 30px;
+	    }
+		}
+	}
+}
+
+@media(min-width:992px){
+	.experience-page {
+		
+		.secondPage {
+			.text-container-simpTek {
+				width: 600px;
+				left: calc(50% - 300px);
+				p {
+					font-size: 22px;
+				}
+			}
+		}
+
+		.firstPage {
+			.intro {
+		    width: 600px;
+		    height: 120px;
+		    top: calc(35% - 60px);
+		    left: calc(50% - 300px);
+
+		    p {
+		    	font-size: 20px;
+		    }
+			}
+
+			.option-section {
+		    width: 370px;
+		    height: 33px;
+		    position: absolute;
+		    top: calc(35% + 50px);
+		    left: calc(50% - 185px);
+
+		    a {
+		    	font-size: 14px;
+		    	font-weight: 100;
+		    }
+			}
+
+			.section {
+		    width: 450px;
+		    height: 160px;
+		    position: absolute;
+		    top: calc(35% + 120px);
+		    left: calc(50% - 225px);
+		    
+		    a {
+		    	font-size: 17px;
+		    }
+			}
+
+			.scroll {
+				bottom: 90px;
+				left: calc(50% - 27.3px);
+
+				a {
+					font-size: 22px;
+				}
+			}
+
+			.scroll-v {
+		    bottom: 66px;
+		    left: calc(50% - 7.8px);
+
+		    a {
+					font-size: 22px;
+				}
+		  }
+		}
+	}
+
+  body {
+		.footer {
+			height: 65px;
+		}
+
+		.navigation-container {
+			top: calc(50% - 18.5px);
+	    left: calc(50% - 130px);
+	    width: 260px;
+
+	    a {
+	    	padding: 7px;
+	    	font-size: 14px;
+	    }
+		}
+
+		.social-container {
+	    height: 33px;
+	    top: calc(50% - 16.5px);
+	    opacity: 1;
+	    right: 15px;
+
+	    img {
+	    	width: 33px;
+	    	height: 33px;
+	    }
+		}
+	}
+}
+
+@media(min-width:1200px){
+	.experience-page {
+		.secondPage {
+			.text-container-simpTek {
+				width: 650px;
+				left: calc(50% - 325px);
+				p {
+					font-size: 25px;
+				}
+			}
+		}
+
+		.firstPage {
+			.intro {
+		    width: 600px;
+		    height: 120px;
+		    top: calc(35% - 60px);
+		    left: calc(50% - 300px);
+
+		    p {
+		    	font-size: 22px;
+		    }
+			}
+
+			.option-section {
+		    width: 400px;
+		    height: 35px;
+		    position: absolute;
+		    top: calc(35% + 80px);
+		    left: calc(50% - 200px);
+
+		    a {
+		    	font-size: 16px;
+		    	font-weight: 100;
+		    }
+			}
+
+			.section {
+		    width: 500px;
+		    height: 180px;
+		    position: absolute;
+		    top: calc(35% + 140px);
+		    left: calc(50% - 250px);
+		    
+		    a {
+		    	font-size: 19px;
+		    }
+			}
+
+			.scroll {
+				bottom: 90px;
+				left: calc(50% - 31.8px);
+
+				a {
+					font-size: 25px;
+				}
+			}
+
+			.scroll-v {
+		    bottom: 66px;
+		    left: calc(50% - 8.8px);
+
+		    a {
+					font-size: 25px;
+				}
+		  }
+		}
+	}
+
+  body {
+		.footer {
+			height: 75px;
+		}
+
+		.navigation-container {
+			top: calc(50% - 20px);
+	    left: calc(50% - 150px);
+	    width: 300px;
+
+	    a {
+	    	padding: 8px;
+	    	font-size: 16px;
+	    }
+		}
+
+		.social-container {
+	    height: 35px;
+	    top: calc(50% - 17.5px);
+	    opacity: 1;
+	    right: 25px;
+	    width: 150px;
+
+	    a {
+	    	margin-right: 10px;
+	    }
+
+	    img {
+	    	width: 35px;
+	    	height: 35px;
+	    }
+		}
+	}
 }

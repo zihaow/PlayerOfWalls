@@ -121,7 +121,7 @@ body .social-container {
   right: 20px;
   width: 133px;
   height: 40px;
-  top: 22.5px;
+  top: calc(50% - 20px);
   opacity: 1;
 }
 
@@ -956,18 +956,18 @@ p {
 .experience-page .secondPage .text-container-simpTek {
   color: #130D0D;
   position: absolute;
-  left: calc(50% - 250px);
+  left: calc(50% - 400px);
   top: calc(50% - 100px);
-  width: 500px;
+  width: 800px;
   height: 200px;
   z-index: 100;
 }
 
 /* line 138, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
 .experience-page .secondPage .text-container-simpTek p {
-  font-size: 19px;
+  font-size: 25px;
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 /* line 144, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
@@ -979,17 +979,21 @@ p {
 .experience-page .secondPage .glyphicon {
   font-size: 80px;
   color: #ffffff;
+  z-index: 200;
   opacity: 0.7;
 }
 
-/* line 158, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+/* line 156, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
 .experience-page .secondPage .kayag {
   position: absolute;
   top: calc(25% - 40px);
   left: calc(20% - 40px);
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
 }
 
-/* line 164, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+/* line 165, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
 .experience-page .secondPage .kayaking {
   position: absolute;
   top: 0;
@@ -1001,30 +1005,26 @@ p {
   opacity: 0.7;
 }
 
-/* line 175, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+/* line 176, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
 .experience-page .secondPage .kayaking:hover {
   opacity: 1;
-  background-position: 0px -130px;
+  background-position: 0px -100px;
   -webkit-filter: blur(0px);
   -moz-filter: blur(0px);
   -o-filter: blur(0px);
   -ms-filter: blur(0px);
   filter: blur(0px);
+  z-index: 200;
 }
 
-/* line 184, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
-.experience-page .secondPage .kayaking:hover .glyphicon {
-  display: none;
-}
-
-/* line 189, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+/* line 187, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
 .experience-page .secondPage .nebog {
   position: absolute;
   top: calc(25% - 40px);
   left: calc(70% - 40px);
 }
 
-/* line 195, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+/* line 193, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
 .experience-page .secondPage .nebo {
   position: absolute;
   top: 0%;
@@ -1036,30 +1036,26 @@ p {
   background-size: cover;
 }
 
-/* line 206, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+/* line 204, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
 .experience-page .secondPage .nebo:hover {
   opacity: 1;
-  background-position: 0 -130px;
+  background-position: 0 -55px;
   -webkit-filter: blur(0px);
   -moz-filter: blur(0px);
   -o-filter: blur(0px);
   -ms-filter: blur(0px);
   filter: blur(0px);
+  z-index: 200;
 }
 
 /* line 215, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
-.experience-page .secondPage .nebo:hover .glyphicon {
-  display: none;
-}
-
-/* line 220, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
 .experience-page .secondPage .simpg {
   position: absolute;
   top: calc(75% - 40px);
   left: calc(30% - 40px);
 }
 
-/* line 226, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+/* line 221, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
 .experience-page .secondPage .simptek {
   position: absolute;
   top: 50%;
@@ -1068,10 +1064,10 @@ p {
   left: 0;
   opacity: 0.7;
   background-image: url("simptek.jpg");
-  background-size: cover;
+  background-size: 110%;
 }
 
-/* line 237, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+/* line 232, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
 .experience-page .secondPage .simptek:hover {
   opacity: 1;
   -webkit-filter: blur(0px);
@@ -1079,21 +1075,18 @@ p {
   -o-filter: blur(0px);
   -ms-filter: blur(0px);
   filter: blur(0px);
+  background-size: 100%;
+  z-index: 200;
 }
 
-/* line 245, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
-.experience-page .secondPage .simptek:hover .glyphicon {
-  display: none;
-}
-
-/* line 250, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+/* line 243, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
 .experience-page .secondPage .riverg {
   position: absolute;
   top: calc(75% - 40px);
   left: calc(80% - 40px);
 }
 
-/* line 256, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+/* line 249, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
 .experience-page .secondPage .river {
   position: absolute;
   top: 50%;
@@ -1105,7 +1098,7 @@ p {
   background-size: cover;
 }
 
-/* line 267, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+/* line 260, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
 .experience-page .secondPage .river:hover {
   opacity: 1;
   -webkit-filter: blur(0px);
@@ -1113,14 +1106,10 @@ p {
   -o-filter: blur(0px);
   -ms-filter: blur(0px);
   filter: blur(0px);
+  z-index: 200;
 }
 
-/* line 275, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
-.experience-page .secondPage .river:hover .glyphicon {
-  display: none;
-}
-
-/* line 282, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+/* line 272, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
 .blur {
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
@@ -1129,13 +1118,390 @@ p {
   filter: blur(5px);
 }
 
-/* line 290, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+/* line 280, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
 .transition {
   transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
   -ms-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
   -webkit-transition: all .5s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  /* line 288, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .intro {
+    width: 500px;
+    height: 100px;
+    top: calc(35% - 50px);
+    left: calc(50% - 250px);
+  }
+  /* line 294, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .intro p {
+    font-size: 18px;
+  }
+  /* line 299, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .option-section {
+    width: 336px;
+    height: 30px;
+    position: absolute;
+    top: calc(35% + 60px);
+    left: calc(50% - 163px);
+  }
+  /* line 306, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .option-section a {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  /* line 312, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .section {
+    width: 400px;
+    height: 140px;
+    position: absolute;
+    top: calc(35% + 100px);
+    left: calc(50% - 200px);
+  }
+  /* line 319, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .section a {
+    font-size: 15px;
+  }
+  /* line 324, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .secondPage .text-container-simpTek {
+    width: 500px;
+    left: calc(50% - 250px);
+  }
+  /* line 327, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .secondPage .text-container-simpTek p {
+    font-size: 19px;
+  }
+  /* line 332, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .scroll {
+    bottom: 66px;
+    left: calc(50% - 25.3px);
+  }
+  /* line 337, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .scroll-v {
+    bottom: 46px;
+    left: calc(50% - 7px);
+  }
+  /* line 342, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .scroll a {
+    font-size: 20px;
+  }
+  /* line 346, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .scroll-v a {
+    font-size: 20px;
+  }
+  /* line 350, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  body .footer {
+    height: 55px;
+  }
+  /* line 354, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  body .navigation-container {
+    top: calc(50% - 15.5px);
+    left: calc(50% - 110px);
+    width: 220px;
+  }
+  /* line 359, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  body .navigation-container a {
+    padding: 6px;
+    font-size: 12px;
+  }
+  /* line 365, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  body .social-container {
+    height: 30px;
+    top: calc(50% - 15px);
+    opacity: 1;
+    right: 0;
+  }
+  /* line 371, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  body .social-container img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 379, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .intro {
+    width: 500px;
+    height: 100px;
+    top: calc(35% - 50px);
+    left: calc(50% - 250px);
+  }
+  /* line 385, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .intro p {
+    font-size: 18px;
+  }
+  /* line 390, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .option-section {
+    width: 336px;
+    height: 30px;
+    position: absolute;
+    top: calc(35% + 60px);
+    left: calc(50% - 163px);
+  }
+  /* line 397, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .option-section a {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  /* line 403, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .section {
+    width: 400px;
+    height: 140px;
+    position: absolute;
+    top: calc(35% + 100px);
+    left: calc(50% - 200px);
+  }
+  /* line 410, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .section a {
+    font-size: 15px;
+  }
+  /* line 415, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .secondPage .text-container-simpTek {
+    width: 500px;
+    left: calc(50% - 250px);
+  }
+  /* line 418, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .secondPage .text-container-simpTek p {
+    font-size: 19px;
+  }
+  /* line 423, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .scroll {
+    bottom: 66px;
+    left: calc(50% - 25.3px);
+  }
+  /* line 428, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .scroll-v {
+    bottom: 46px;
+    left: calc(50% - 7px);
+  }
+  /* line 433, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .scroll a {
+    font-size: 20px;
+  }
+  /* line 437, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .scroll-v a {
+    font-size: 20px;
+  }
+  /* line 441, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  body .footer {
+    height: 55px;
+  }
+  /* line 445, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  body .navigation-container {
+    top: calc(50% - 15.5px);
+    left: calc(50% - 110px);
+    width: 220px;
+  }
+  /* line 450, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  body .navigation-container a {
+    padding: 6px;
+    font-size: 12px;
+  }
+  /* line 456, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  body .social-container {
+    height: 30px;
+    top: calc(50% - 15px);
+    opacity: 1;
+    right: 0;
+  }
+  /* line 462, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  body .social-container img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 470, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .secondPage .text-container-simpTek {
+    width: 600px;
+    left: calc(50% - 300px);
+  }
+  /* line 473, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .secondPage .text-container-simpTek p {
+    font-size: 22px;
+  }
+  /* line 478, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .intro {
+    width: 600px;
+    height: 120px;
+    top: calc(35% - 60px);
+    left: calc(50% - 300px);
+  }
+  /* line 484, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .intro p {
+    font-size: 20px;
+  }
+  /* line 489, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .option-section {
+    width: 370px;
+    height: 33px;
+    position: absolute;
+    top: calc(35% + 50px);
+    left: calc(50% - 185px);
+  }
+  /* line 496, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .option-section a {
+    font-size: 14px;
+    font-weight: 100;
+  }
+  /* line 502, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .section {
+    width: 450px;
+    height: 160px;
+    position: absolute;
+    top: calc(35% + 120px);
+    left: calc(50% - 225px);
+  }
+  /* line 509, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .section a {
+    font-size: 17px;
+  }
+  /* line 514, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .scroll {
+    bottom: 90px;
+    left: calc(50% - 27.3px);
+  }
+  /* line 518, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .scroll a {
+    font-size: 22px;
+  }
+  /* line 523, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .scroll-v {
+    bottom: 66px;
+    left: calc(50% - 7.8px);
+  }
+  /* line 527, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .scroll-v a {
+    font-size: 22px;
+  }
+  /* line 532, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  body .footer {
+    height: 65px;
+  }
+  /* line 536, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  body .navigation-container {
+    top: calc(50% - 18.5px);
+    left: calc(50% - 130px);
+    width: 260px;
+  }
+  /* line 541, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  body .navigation-container a {
+    padding: 7px;
+    font-size: 14px;
+  }
+  /* line 547, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  body .social-container {
+    height: 33px;
+    top: calc(50% - 16.5px);
+    opacity: 1;
+    right: 15px;
+  }
+  /* line 553, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  body .social-container img {
+    width: 33px;
+    height: 33px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 563, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .secondPage .text-container-simpTek {
+    width: 650px;
+    left: calc(50% - 325px);
+  }
+  /* line 566, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .secondPage .text-container-simpTek p {
+    font-size: 25px;
+  }
+  /* line 573, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .intro {
+    width: 600px;
+    height: 120px;
+    top: calc(35% - 60px);
+    left: calc(50% - 300px);
+  }
+  /* line 579, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .intro p {
+    font-size: 22px;
+  }
+  /* line 584, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .option-section {
+    width: 400px;
+    height: 35px;
+    position: absolute;
+    top: calc(35% + 80px);
+    left: calc(50% - 200px);
+  }
+  /* line 591, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .option-section a {
+    font-size: 16px;
+    font-weight: 100;
+  }
+  /* line 597, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .section {
+    width: 500px;
+    height: 180px;
+    position: absolute;
+    top: calc(35% + 140px);
+    left: calc(50% - 250px);
+  }
+  /* line 604, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .section a {
+    font-size: 19px;
+  }
+  /* line 609, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .scroll {
+    bottom: 90px;
+    left: calc(50% - 31.8px);
+  }
+  /* line 613, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .scroll a {
+    font-size: 25px;
+  }
+  /* line 618, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .scroll-v {
+    bottom: 66px;
+    left: calc(50% - 8.8px);
+  }
+  /* line 622, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  .experience-page .firstPage .scroll-v a {
+    font-size: 25px;
+  }
+  /* line 630, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  body .footer {
+    height: 75px;
+  }
+  /* line 634, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  body .navigation-container {
+    top: calc(50% - 20px);
+    left: calc(50% - 150px);
+    width: 300px;
+  }
+  /* line 639, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  body .navigation-container a {
+    padding: 8px;
+    font-size: 16px;
+  }
+  /* line 645, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  body .social-container {
+    height: 35px;
+    top: calc(50% - 17.5px);
+    opacity: 1;
+    right: 25px;
+    width: 150px;
+  }
+  /* line 652, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  body .social-container a {
+    margin-right: 10px;
+  }
+  /* line 656, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/experience.scss */
+  body .social-container img {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 /* line 1, /Users/ZihaoWu/Desktop/zihaow/app/public/stylesheets/pages/contact.scss */

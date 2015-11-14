@@ -8,76 +8,155 @@ app.controller('ExperienceController',function($window, $scope, $rootScope, $rou
 	
 	// overflow auto 
 	$(document).ready(function() {
-  	$('.content').css("overflow", "auto");
-  	var windowHeight = $(window).height();
-  	var halfHeight = windowHeight;
-  	windowHeight = windowHeight * 2;
-  	$('.content').css("height", windowHeight);
+      	$('.content').css("overflow", "auto");
+      	var windowHeight = $(window).height();
+      	var halfHeight = windowHeight;
+      	windowHeight = windowHeight * 2;
+      	$('.content').css("height", windowHeight);
 
-  	$(".kayaking").mouseenter(function(){
-        $('.kayaking').css("z-index", "200");
-        $('.kayaking').css("width", "100%");
-        $('.kayaking').css("height", "100%");
-				console.log("hovering");
-    });
+      	$(".kayag").mouseenter(function(){
+            $('.kayaking').css("z-index", "200");
+            $('.nebog').css("z-index", "0");
+            $('.kayag').css("z-index", "0");
+            $('.simpg').css("z-index", "0");
+            $('.riverg').css("z-index", "0");
+            $('.kayaking').css("width", "100%");
+            $('.kayaking').css("height", "100%");
+            $('.kayaking').css("opacity", "1");
+            $('.kayaking').css("-webkit-filter", "blur(0px)");
+            $('.kayaking').css("-moz-filter", "blur(0px)");
+            $('.kayaking').css("-o-filter", "blur(0px)");
+            $('.kayaking').css("-ms-filter", "blur(0px)");
+            $('.kayaking').css("filter", "blur(0px)");
+        });
 
-    $(".kayaking").mouseleave(function(){
-        $('.kayaking').css("z-index", "0");
-        $('.kayaking').css("width", "");
-        $('.kayaking').css("height", "");
-    });
+        $(".kayag").mouseleave(function(){
+            $('.kayaking').css("z-index", "0");
+            $('.nebog').css("z-index", "");
+            $('.kayag').css("z-index", "");
+            $('.simpg').css("z-index", "");
+            $('.riverg').css("z-index", "");
+            $('.kayaking').css("width", "");
+            $('.kayaking').css("height", "");
+            $('.kayaking').css("opacity", "");
+            $('.kayaking').css("-webkit-filter", "");
+            $('.kayaking').css("-moz-filter", "");
+            $('.kayaking').css("-o-filter", "");
+            $('.kayaking').css("-ms-filter", "");
+            $('.kayaking').css("filter", "");
+        });
 
-    $(".nebo").mouseenter(function(){
-        $('.nebo').css("z-index", "200");
-        $('.nebo').css("width", "100%");
-        $('.nebo').css("height", "100%");
-        $('.nebo').css("left", "0");
-    });
+        $(".nebog").mouseenter(function(){
+            $('.nebo').css("z-index", "200");
+            $('.kayag').css("z-index", "0");
+            $('.simpg').css("z-index", "0");
+            $('.riverg').css("z-index", "0");
+            $('.nebog').css("z-index", "0");
+            $('.nebo').css("width", "100%");
+            $('.nebo').css("height", "100%");
+            $('.nebo').css("left", "0");
+            $('.nebo').css("opacity", "1");
+            $('.nebo').css("-webkit-filter", "blur(0px)");
+            $('.nebo').css("-moz-filter", "blur(0px)");
+            $('.nebo').css("-o-filter", "blur(0px)");
+            $('.nebo').css("-ms-filter", "blur(0px)");
+            $('.nebo').css("filter", "blur(0px)");
+        });
 
-    $(".nebo").mouseleave(function(){
-        $('.nebo').css("z-index", "0");
-        $('.nebo').css("width", "");
-        $('.nebo').css("height", "");
-        $('.nebo').css("left", "");
-    });
+        $(".nebog").mouseleave(function(){
+            $('.kayag').css("z-index", "");
+            $('.nebo').css("z-index", "0");
+            $('.simpg').css("z-index", "");
+            $('.nebog').css("z-index", "");
+            $('.riverg').css("z-index", "");
+            $('.nebo').css("width", "");
+            $('.nebo').css("height", "");
+            $('.nebo').css("left", "");
+            $('.nebo').css("opacity", "");
+            $('.nebo').css("-webkit-filter", "");
+            $('.nebo').css("-moz-filter", "");
+            $('.nebo').css("-o-filter", "");
+            $('.nebo').css("-ms-filter", "");
+            $('.nebo').css("filter", "");
+        });
 
-    $(".simptek").mouseenter(function(){
-        $('.simptek').css("z-index", "200");
-        $('.simptek').css("width", "100%");
-        $('.simptek').css("height", "100%");
-        $('.simptek').css("top", "0");
-    });
+        $(".simpg").mouseenter(function(){
+            $('.simptek').css("z-index", "200");
+            $('.simpg').css("z-index", "0");
+            $('.kayag').css("z-index", "0");
+            $('.riverg').css("z-index", "0");
+            $('.nebog').css("z-index", "0");
+            $('.simptek').css("width", "100%");
+            $('.simptek').css("height", "100%");
+            $('.simptek').css("top", "0");
+            $('.simptek').css("opacity", "1");
+            $('.simptek').css("-webkit-filter", "blur(0px)");
+            $('.simptek').css("-moz-filter", "blur(0px)");
+            $('.simptek').css("-o-filter", "blur(0px)");
+            $('.simptek').css("-ms-filter", "blur(0px)");
+            $('.simptek').css("filter", "blur(0px)");
+        });
 
-    $(".simptek").mouseleave(function(){
-        $('.simptek').css("z-index", "0");
-        $('.simptek').css("width", "");
-        $('.simptek').css("height", "");
-        $('.simptek').css("top", "");
-    });
+        $(".simpg").mouseleave(function(){
+            $('.simptek').css("z-index", "0");
+            $('.kayag').css("z-index", "");
+            $('.simpg').css("z-index", "");
+            $('.riverg').css("z-index", "");
+            $('.nebog').css("z-index", "");
+            $('.simptek').css("width", "");
+            $('.simptek').css("height", "");
+            $('.simptek').css("top", "");
+            $('.simptek').css("opacity", "");
+            $('.simptek').css("-webkit-filter", "");
+            $('.simptek').css("-moz-filter", "");
+            $('.simptek').css("-o-filter", "");
+            $('.simptek').css("-ms-filter", "");
+            $('.simptek').css("filter", "");
+        });
 
-    $(".river").mouseenter(function(){
-        $('.river').css("z-index", "200");
-        $('.river').css("width", "100%");
-        $('.river').css("height", "100%");
-        $('.river').css("top", "0");
-        $('.river').css("left", "0");
-    });
+        $(".riverg").mouseenter(function(){
+            $('.riverg').css("z-index", "0");
+            $('.kayag').css("z-index", "0");
+            $('.nebog').css("z-index", "0");
+            $('.simpg').css("z-index", "0");
+            $('.river').css("z-index", "200");
+            $('.river').css("width", "100%");
+            $('.river').css("height", "100%");
+            $('.river').css("top", "0");
+            $('.river').css("left", "0");
+            $('.river').css("opacity", "1");
+            $('.river').css("-webkit-filter", "blur(0px)");
+            $('.river').css("-moz-filter", "blur(0px)");
+            $('.river').css("-o-filter", "blur(0px)");
+            $('.river').css("-ms-filter", "blur(0px)");
+            $('.river').css("filter", "blur(0px)");
+        });
 
-    $(".river").mouseleave(function(){
-        $('.river').css("z-index", "0");
-        $('.river').css("width", "");
-        $('.river').css("height", "");
-        $('.river').css("top", "");
-        $('.river').css("left", "");
-    });
+        $(".riverg").mouseleave(function(){
+            $('.river').css("z-index", "0");
+            $('.riverg').css("z-index", "");
+            $('.kayag').css("z-index", "");
+            $('.nebog').css("z-index", "");
+            $('.simpg').css("z-index", "");
+            $('.river').css("width", "");
+            $('.river').css("height", "");
+            $('.river').css("top", "");
+            $('.river').css("left", "");
+            $('.river').css("opacity", "");
+            $('.river').css("-webkit-filter", "");
+            $('.river').css("-moz-filter", "");
+            $('.river').css("-o-filter", "");
+            $('.river').css("-ms-filter", "");
+            $('.river').css("filter", "");
+        });
   	
-   	// check if the user is on second page.
-   	$window.onscroll = function() {
-			if( $(window).scrollTop() >= halfHeight/2){ 	
-				console.log($(window).scrollTop());
-				console.log("on second page");
-			}
-		};
+       	// check if the user is on second page.
+       	$window.onscroll = function() {
+    	  if( $(window).scrollTop() >= halfHeight/2){ 	
+    		console.log($(window).scrollTop());
+    		console.log("on second page");
+    	  }
+    	};
 	});
 
 	$scope.showConfident = function() {
