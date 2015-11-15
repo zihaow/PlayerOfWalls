@@ -5,7 +5,7 @@ app.controller('ExperienceController',function($window, $scope, $rootScope, $rou
 	$scope.showTimeManagement = false;
 	$scope.showScroll = false;
 	$scope.showSimpTek = true;
-	
+    
 	// overflow auto 
 	$(document).ready(function() {
       	$('.content').css("overflow", "auto");
@@ -20,6 +20,7 @@ app.controller('ExperienceController',function($window, $scope, $rootScope, $rou
             $('.kayag').css("z-index", "0");
             $('.simpg').css("z-index", "0");
             $('.riverg').css("z-index", "0");
+            
             $('.kayaking').css("width", "100%");
             $('.kayaking').css("height", "100%");
             $('.kayaking').css("opacity", "1");
@@ -36,6 +37,7 @@ app.controller('ExperienceController',function($window, $scope, $rootScope, $rou
             $('.kayag').css("z-index", "");
             $('.simpg').css("z-index", "");
             $('.riverg').css("z-index", "");
+            
             $('.kayaking').css("width", "");
             $('.kayaking').css("height", "");
             $('.kayaking').css("opacity", "");
@@ -52,9 +54,11 @@ app.controller('ExperienceController',function($window, $scope, $rootScope, $rou
             $('.simpg').css("z-index", "0");
             $('.riverg').css("z-index", "0");
             $('.nebog').css("z-index", "0");
+            
+            $('.nebo').css("left", "0");
+
             $('.nebo').css("width", "100%");
             $('.nebo').css("height", "100%");
-            $('.nebo').css("left", "0");
             $('.nebo').css("opacity", "1");
             $('.nebo').css("-webkit-filter", "blur(0px)");
             $('.nebo').css("-moz-filter", "blur(0px)");
@@ -64,11 +68,12 @@ app.controller('ExperienceController',function($window, $scope, $rootScope, $rou
         });
 
         $(".nebog").mouseleave(function(){
-            $('.kayag').css("z-index", "");
             $('.nebo').css("z-index", "0");
+            $('.kayag').css("z-index", "");
             $('.simpg').css("z-index", "");
             $('.nebog').css("z-index", "");
             $('.riverg').css("z-index", "");
+            
             $('.nebo').css("width", "");
             $('.nebo').css("height", "");
             $('.nebo').css("left", "");
@@ -86,9 +91,11 @@ app.controller('ExperienceController',function($window, $scope, $rootScope, $rou
             $('.kayag').css("z-index", "0");
             $('.riverg').css("z-index", "0");
             $('.nebog').css("z-index", "0");
+
+            $('.simptek').css("top", "0");
+            
             $('.simptek').css("width", "100%");
             $('.simptek').css("height", "100%");
-            $('.simptek').css("top", "0");
             $('.simptek').css("opacity", "1");
             $('.simptek').css("-webkit-filter", "blur(0px)");
             $('.simptek').css("-moz-filter", "blur(0px)");
@@ -103,6 +110,7 @@ app.controller('ExperienceController',function($window, $scope, $rootScope, $rou
             $('.simpg').css("z-index", "");
             $('.riverg').css("z-index", "");
             $('.nebog').css("z-index", "");
+            
             $('.simptek').css("width", "");
             $('.simptek').css("height", "");
             $('.simptek').css("top", "");
@@ -115,15 +123,17 @@ app.controller('ExperienceController',function($window, $scope, $rootScope, $rou
         });
 
         $(".riverg").mouseenter(function(){
+            $('.river').css("z-index", "200");
             $('.riverg').css("z-index", "0");
             $('.kayag').css("z-index", "0");
             $('.nebog').css("z-index", "0");
             $('.simpg').css("z-index", "0");
-            $('.river').css("z-index", "200");
-            $('.river').css("width", "100%");
-            $('.river').css("height", "100%");
+
             $('.river').css("top", "0");
             $('.river').css("left", "0");
+            
+            $('.river').css("width", "100%");
+            $('.river').css("height", "100%");
             $('.river').css("opacity", "1");
             $('.river').css("-webkit-filter", "blur(0px)");
             $('.river').css("-moz-filter", "blur(0px)");
@@ -138,6 +148,7 @@ app.controller('ExperienceController',function($window, $scope, $rootScope, $rou
             $('.kayag').css("z-index", "");
             $('.nebog').css("z-index", "");
             $('.simpg').css("z-index", "");
+           
             $('.river').css("width", "");
             $('.river').css("height", "");
             $('.river').css("top", "");

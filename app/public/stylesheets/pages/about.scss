@@ -3,9 +3,8 @@ body {
 	height: 100%;
 	position: absolute;
 	margin: 0;
-	font-family: 'Open Sans', 'Helvetica';
+	font-family: 'Lato', 'Helvetica';
 	font-weight: 200;
-	/* background: url('Zihao_Signature.png') no-repeat center center fixed; */
 }
 
 .mouseEffect {
@@ -43,7 +42,6 @@ body {
 .rubberBandEffect.result {
 	animation: rubberBand 1s;
 	animation-delay: 0s;
-
 }
 
 /* used when hover is done. */
@@ -71,6 +69,18 @@ body {
 	width: 400px;
 	margin: 0 0 0 -200px;
 	z-index: 0;
+
+	a:hover {
+		text-decoration: none;
+		color: #FFFFFF; 
+		background:#333333;
+	}
+
+	p {
+		font-size: 20px;
+		text-align: center;
+		font-weight: 300;
+	}
 }
 
 .main-contents:hover {
@@ -79,19 +89,11 @@ body {
   opacity: 0.25;
 }
 
-p {
-	font-size: 20px;
-	text-align: center;
-}
-
 .appstore {
 	border: 1px solid #333333;
 	position: absolute;
   left: calc(50% - 65px);
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px 20px 5px 20px;
   box-sizing: border-box;
 	background:#FFFFFF;
 	color: #333333; 
@@ -99,50 +101,33 @@ p {
 	text-decoration: none;
 	display: inline-block;
 	vertical-align: middle;
-	border-top-left-radius:5px;
-	border-top-right-radius:5px;
-	border-bottom-left-radius:5px;
-	border-bottom-right-radius:5px;
+	border-radius: 5px;
 	text-align: center;
+	font-weight: 300;
 }
 
-.skills-container a:hover {
-	text-decoration: none;
-	color: #FFFFFF; 
-	background:#333333;
+.page-general {
+	height: 100px;
+	width: 400px;
+	margin: 0 0 0 -200px;
+	z-index: 0;
+	opacity: 0.3;
+	position: absolute;
 }
 
 .page1 {
-	position: absolute;
 	left: 25%;
 	top: calc(20% - 85px);
-	height: 100px;
-	width: 400px;
-	margin: 0 0 0 -200px;
-	z-index: 0;
-	opacity: 0.3;
 }
 
 .page2 {
-	position: absolute;
 	left: 50%;
 	top: calc(20% - 55px); 
-	height: 100px;
-	width: 400px;
-	margin: 0 0 0 -200px;
-	z-index: 0;
-	opacity: 0.3;
 }
 
 .page3 {
-	position: absolute;
 	left: 75%;
 	top: calc(20% - 85px);
-	height: 100px;
-	width: 400px;
-	margin: 0 0 0 -200px;
-	z-index: 0;
-	opacity: 0.3;
 }
 
 /* z-index for a page hover. */
@@ -160,7 +145,7 @@ p {
 }
 
 /* universal properties for pages. */
-.page-general {
+.hide-page-general {
 	height: 100%;
 	width: 100%;
 	box-sizing: border-box;
@@ -169,10 +154,7 @@ p {
 	text-decoration: none;
 	display: inline-block;
 	vertical-align: middle;
-	border-top-left-radius:5px;
-	border-top-right-radius:5px;
-	border-bottom-left-radius:5px;
-	border-bottom-right-radius:5px;
+	border-radius: 5px;
 	text-align: center;
 	border: 1px solid #FFFFFF;
 }
@@ -181,8 +163,122 @@ p {
 .pages-border-property {
 	position: absolute;
 	font-size: 14px;
-	padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+	padding: 8px 5px 8px 5px;
+	font-weight: 300;
+}
+
+/* ****************************************************************************************
+ * ************************************ Media Queries *********************************** 
+ ****************************************************************************************** */
+
+@media(max-width:767px){
+	.skills-container {
+		top: calc(50% - 75px);
+    height: 150px;
+    width: 300px;
+    margin: 0 0 0 -150px;
+   	p {
+   		font-size: 17px;
+   	}
+
+   	a {
+   		left: calc(50% - 47.4px);
+    	padding: 2px 10px 2px 10px;
+    	font-size: 15px;
+   	}
+	}
+
+	.page-general {
+		height: 85px;
+		width: 300px;
+		margin: 0 0 0 -150px;
+	}
+
+	.pages-border-property {
+		font-size: 12px;
+	}
+}
+
+@media(min-width:768px){
+	.skills-container {
+		top: calc(50% - 75px);
+    height: 150px;
+    width: 300px;
+    margin: 0 0 0 -150px;
+   	p {
+   		font-size: 17px;
+   	}
+
+   	a {
+   		left: calc(50% - 47.4px);
+    	padding: 2px 10px 2px 10px;
+    	font-size: 15px;
+   	}
+	}
+
+	.page-general {
+		height: 85px;
+		width: 300px;
+		margin: 0 0 0 -150px;
+	}
+
+	.pages-border-property {
+		font-size: 12px;
+	}
+}
+
+@media(min-width:992px){
+	.skills-container {
+		top: calc(50% - 85px);
+    height: 170px;
+    width: 350px;
+    margin: 0 0 0 -175px;
+   	p {
+   		font-size: 19px;
+   	}
+
+   	a {
+   		left: calc(50% - 50.5px);
+	    padding: 3px 12px 3px 12px;
+	    font-size: 17px;
+   	}
+	}
+
+	.page-general {
+		height: 90px;
+		width: 350px;
+		margin: 0 0 0 -175px;
+	}
+
+	.pages-border-property {
+		font-size: 13px;
+	}
+}
+
+@media(min-width:1200px){
+	.skills-container {
+		top: calc(50% - 100px);
+    height: 200px;
+    width: 400px;
+    margin: 0 0 0 -200px;
+   	p {
+   		font-size: 22px;
+   	}
+
+   	a {
+   		left: calc(50% - 57.3px);
+	    padding: 4px 14px 4px 14px;
+	    font-size: 19px;
+   	}
+	}
+
+	.page-general {
+		height: 100px;
+		width: 400px;
+		margin: 0 0 0 -200px;
+	}
+
+	.pages-border-property {
+		font-size: 14px;
+	}
 }

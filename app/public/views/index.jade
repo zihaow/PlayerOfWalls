@@ -32,6 +32,7 @@ html(ng-app='zihaow')
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js')
 		
 		//- Controllers
+		script(src='controllers/MainController.js')
 		script(src='controllers/HomeController.js')
 		script(src='controllers/AboutController.js')
 		script(src='controllers/ExperienceController.js')
@@ -42,13 +43,13 @@ html(ng-app='zihaow')
 		script(src='directives/scrollCheck.js')
 
 	body
-		.footer
+		.footer(ng-controller="MainController")
 			.navigation-container
 				a(href='/') Home
 				a(href='/about') About
 				a(href='/experience') Experience
 				a(href='/contact') Contact
-			.social-container
+			.social-container(ng-show="showSocial")
 				a(href='https://www.flickr.com/photos/100481265@N05/', target='blank')
 					img(src='flickr.png', width='38', height='38')
 				a(href='https://www.facebook.com/zihao.wu.921', target='blank')

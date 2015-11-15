@@ -4,9 +4,12 @@ app.controller('HomeController',function($scope, $rootScope, $route, $http, $tim
 	$scope.showBackground = true;
 	$scope.showSlideShow = true;
 	$scope.skipPhoto = true;
+	
 
 	$(document).ready(function() {
-   $('.text-container').css("animation-delay", "40s");
+   	$('.text-container').css("animation-delay", "40s");
+
+   	
 	});
 	
 
