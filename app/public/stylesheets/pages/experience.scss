@@ -127,7 +127,6 @@
 		font-family: lato;
 
 		.text-container-simpTek {
-			color: #130D0D;
 			position: absolute;
 			left: calc(50% - 400px);
 			top: calc(50% - 100px);
@@ -135,14 +134,27 @@
     	height: 200px;
     	z-index: 100;
 
-			p {
+
+			a {
 				font-size: 25px;
 		    text-align: center;
-		    font-weight: 500;
-			}
-
-			p:hover {
-				text-shadow: 0px 0px 20px #3C3232, 0px 0px 10px #fff;
+		    font-weight: 700;
+		    text-decoration: none;
+		    color: #ffffff;
+		    display: inline-block;
+		    cursor: pointer;
+		    font-family: "Lato";
+				p {
+					display: inline;
+					font-size: 25px;
+			    text-align: center;
+			    font-weight: 500;
+			    color: #130D0D;
+			    cursor: default;
+				}
+				p:hover {
+					text-shadow: 0px 0px 20px #3C3232, 0px 0px 10px #fff;
+				}
 			}
 		}
 
@@ -297,8 +309,11 @@
 				width: 500px;
 				left: calc(50% - 250px);
 				
-				p {
+				a {
 					font-size: 19px;
+					p {
+						font-size: 19px;
+					}
 				}
 			}
 		}
@@ -401,9 +416,20 @@
 			.text-container-simpTek {
 				width: 500px;
 				left: calc(50% - 250px);
-				p {
+				a {
 					font-size: 19px;
+					p {
+						font-size: 19px;
+					}
 				}
+			}
+
+			.nebo:hover {
+				background-position: 0 -15px;
+			}
+
+			.kayaking:hover {
+				background-position: 0px -15px;
 			}
 		}
 
@@ -506,9 +532,20 @@
 			.text-container-simpTek {
 				width: 600px;
 				left: calc(50% - 300px);
-				p {
+				a {
 					font-size: 22px;
+					p {
+						font-size: 22px;
+					}
 				}
+			}
+
+			.nebo:hover {
+				background-position: 0 -115px;
+			}
+
+			.kayaking:hover {
+				background-position: 0px -115px;
 			}
 		}
 
@@ -610,9 +647,20 @@
 			.text-container-simpTek {
 				width: 650px;
 				left: calc(50% - 325px);
-				p {
+				a {
 					font-size: 25px;
+						p {
+						font-size: 25px;
+					}
 				}
+			}
+
+			.nebo:hover {
+				background-position: 0 -215px;
+			}
+
+			.kayaking:hover {
+				background-position: 0px -215px;
 			}
 		}
 

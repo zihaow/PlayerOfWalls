@@ -1,0 +1,11 @@
+.contact-page-container
+	.answer-container 
+		.text-container-contact
+			p(ng-show="showText") 点击勾符去获得答案
+			p(ng-show="gotIt" class="shake animated") 哈哈，被你逮到了
+		.glyphicon.glyphicon-ok-sign.star1p(ng-click="clickFirst()")
+		.glyphicon.glyphicon-ok-sign.star2p(ng-click="clickSecond()")
+		.glyphicon.glyphicon-ok-sign.star3p(ng-click="clickThird()")
+		.contact-info(ng-show="showContact" class="rollIn animated")
+			p zihaow@cs.dal.ca
+	.zoomIn-moon

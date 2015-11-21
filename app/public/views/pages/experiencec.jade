@@ -1,0 +1,33 @@
+.experience-page(scrollCheck)
+	.firstPage
+		.intro(class="wow bounceInDown" data-wow-delay="0.5s")
+			p 我的第一份工作是来自于新斯科舍省政府。他们给了我在一个正规机构工作的工作体验，也正在他们第一次告诉我我的潜力有多么得大，我非常感激他们能给我第一份工作以及这样难得的机会。
+		.option-section
+			a(ng-mouseover="showConfident()", ng-mouseleave="hideConfidence()", class="wow fadeInUp" data-wow-delay="1s") 自信心
+			a(ng-mouseover="showTeamworks()", ng-mouseleave="hideTeamwork()", class="wow fadeInUp" data-wow-delay="1.5s") 团队合作
+			a(ng-mouseover="showTimeMgmt()", ng-mouseleave="hideTimeMgmt()", class="wow fadeInUp" data-wow-delay="2s") 时间管理
+		.confidence-section.section(ng-show="showConfidence")
+			a 作为一个实习学生，一开始我不觉得自己能给他们作出多大贡献。他们证明我是错的，他们将很多重要的工作都抛给了我，我感觉自己不像是个学生因为我把所有的工作都完成得很出色。我听到最多的反馈就是：你太棒了！我非常感激他们对我所做的一切鼓励和支持。
+		.teamwork-section.section(ng-show="showTeamwork")
+			a 政府的工作经历证明了团队合作的重要性，一个出色的团队让你觉得自己很重要，一个出色的团队能够有效率有计划得完成工作。当我在政府工作的时候，我时常会和别的政府部门联系，然后我们一起合作完成很多重要的项目。
+		.timeMgmt-section.section(ng-show="showTimeManagement")
+			a 每次一个项目分给我的时候，上面会明确表明什么时间需要完成。这让我有紧迫感以及责任感，因为我所做的一切影响着别的部门能否按时完成他们的相应多工作。正是因为拥有一个效率高的出色团队，我经常能够提前完成给我的任务，每次我完成一个任务他们总会说我让他们印象深刻。
+		.scroll(ng-show="showScroll", class="bounce animated")
+			a 下一页
+		.scroll-v(ng-show="showScroll", class="bounce animated")
+			a V
+
+	.secondPage
+		.text-container-simpTek(class="wow zoomIn" data-wow-delay="0.7s")
+			a(href="http://www.simptektechnologies.ca/" target="blank") 斯塔克科技公司
+				p 是一家超级棒十分注重员工的科技公司。作为一个年轻的科技公司，他们非常注重公司的每一个人，公司的文化让我觉得自己是他们不可或缺的一部分，我们之间像家人一样互相照应彼此。我们一起工作，一起吃饭，一起出去旅行，最重要的是：我们一起进步。在斯塔克科技公司的工作体验给了我一个长远的目标，我希望自己成为一个全能开发者，负责前后端，设计，结构的所有工作。
+		.kayaking.transition.blur(class="wow slideInLeft" data-wow-delay="0.5s")
+		.glyphicon.glyphicon-search.kayag(class="wow slideInLeft" data-wow-delay="0.5s")
+		.nebo.transition.blur(class="wow slideInRight" data-wow-delay="1s")
+		.glyphicon.glyphicon-search.nebog(class="wow slideInRight" data-wow-delay="1s")
+		.simptek.transition.blur(class="wow slideInLeft" data-wow-delay="0.5s")
+		.glyphicon.glyphicon-search.simpg(class="wow slideInLeft" data-wow-delay="0.5s")
+		.river.transition.blur(class="wow slideInRight" data-wow-delay="1s")
+		.glyphicon.glyphicon-search.riverg(class="wow slideInRight" data-wow-delay="1s")
+			
+		

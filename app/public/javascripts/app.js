@@ -33,8 +33,18 @@ app.config(function($routeProvider, $locationProvider) {
         controller  : 'HomeController'
     })
 
+    .when('/homec', {
+        templateUrl : 'pages/homec',
+        controller  : 'HomeController'
+    })
+
     .when('/about', {
         templateUrl : 'pages/about',
+        controller  : 'AboutController'
+    })
+
+    .when('/aboutc', {
+        templateUrl : 'pages/aboutc',
         controller  : 'AboutController'
     })
 
@@ -43,8 +53,18 @@ app.config(function($routeProvider, $locationProvider) {
         controller  : 'ExperienceController'
     })
 
+    .when('/experiencec', {
+        templateUrl : 'pages/experiencec',
+        controller  : 'ExperienceController'
+    })
+
     .when('/contact', {
         templateUrl : 'pages/contact',
+        controller  : 'ContactController'
+    })
+
+    .when('/contactc', {
+        templateUrl : 'pages/contactc',
         controller  : 'ContactController'
     });
 

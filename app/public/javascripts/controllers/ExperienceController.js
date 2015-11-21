@@ -1,15 +1,36 @@
-app.controller('ExperienceController',function($window, $scope, $rootScope, $route, $http, $timeout){
+app.controller('ExperienceController',function($location, $window, $scope, $rootScope, $route, $http, $timeout){
 	$scope.showBackground = false;
 	$scope.showConfidence = false;
 	$scope.showTeamwork = false;
 	$scope.showTimeManagement = false;
 	$scope.showScroll = false;
 	$scope.showSimpTek = true;
+
+    var currentPage = $location.path();
+    if (currentPage === "/experiencec") {
+
+        // center option container in Chinese text.
+        var containerWidth = $('.option-section').width();
+        var option1With = $(".option-section a:nth-child(1)").width();
+        var option2With = $(".option-section a:nth-child(2)").width();
+        var option3With = $(".option-section a:nth-child(3)").width();
+        var optionWidth = option1With +  option2With + option3With + 96;
+        containerWidth = (containerWidth - optionWidth)/2;
+        optionWidth = option1With +  option2With + option3With + 96 + containerWidth;
+        optionWidth = "-=" + optionWidth/2 + "px";
+        $('.option-section').css("left", "50%").css("left", optionWidth);
+
+        // center scroll reminder in Chinese text.
+        var scrollWidth = $(".scroll").width();
+        scrollWidth = "-=" + scrollWidth/2;
+        $(".scroll").css("left", "50%").css("left", scrollWidth);
+    }
     
 	// overflow auto 
 	$(document).ready(function() {
       	$('.content').css("overflow", "auto");
       	var windowHeight = $(window).height();
+        var windowWidth = $(window).width();
       	var halfHeight = windowHeight;
       	windowHeight = windowHeight * 2;
       	$('.content').css("height", windowHeight);
@@ -29,6 +50,13 @@ app.controller('ExperienceController',function($window, $scope, $rootScope, $rou
             $('.kayaking').css("-o-filter", "blur(0px)");
             $('.kayaking').css("-ms-filter", "blur(0px)");
             $('.kayaking').css("filter", "blur(0px)");
+
+            if (windowWidth >= 1200)
+                $('.kayaking').css("background-position", "0 -615px");
+            if (windowWidth >= 992 && windowWidth < 1200)
+                $('.kayaking').css("background-position", "0 -415px");
+            if (windowWidth < 992)
+                $('.kayaking').css("background-position", "0 -115px");
         });
 
         $(".kayag").mouseleave(function(){
@@ -46,6 +74,8 @@ app.controller('ExperienceController',function($window, $scope, $rootScope, $rou
             $('.kayaking').css("-o-filter", "");
             $('.kayaking').css("-ms-filter", "");
             $('.kayaking').css("filter", "");
+
+            $('.kayaking').css("background-position", "");
         });
 
         $(".nebog").mouseenter(function(){
@@ -65,7 +95,14 @@ app.controller('ExperienceController',function($window, $scope, $rootScope, $rou
             $('.nebo').css("-o-filter", "blur(0px)");
             $('.nebo').css("-ms-filter", "blur(0px)");
             $('.nebo').css("filter", "blur(0px)");
-        });
+
+            if (windowWidth >= 1200)
+                $('.nebo').css("background-position", "0 -215px");
+            if (windowWidth >= 992 && windowWidth < 1200)
+                $('.nebo').css("background-position", "0 -80px");
+            if (windowWidth < 992)
+                $('.nebo').css("background-position", "0 0");
+        }); 
 
         $(".nebog").mouseleave(function(){
             $('.nebo').css("z-index", "0");
@@ -83,6 +120,8 @@ app.controller('ExperienceController',function($window, $scope, $rootScope, $rou
             $('.nebo').css("-o-filter", "");
             $('.nebo').css("-ms-filter", "");
             $('.nebo').css("filter", "");
+
+            $('.nebo').css("background-position", "");
         });
 
         $(".simpg").mouseenter(function(){
@@ -102,6 +141,9 @@ app.controller('ExperienceController',function($window, $scope, $rootScope, $rou
             $('.simptek').css("-o-filter", "blur(0px)");
             $('.simptek').css("-ms-filter", "blur(0px)");
             $('.simptek').css("filter", "blur(0px)");
+
+            if (windowWidth < 992)
+                $('.simptek').css("background-size", "115%");
         });
 
         $(".simpg").mouseleave(function(){
@@ -120,6 +162,8 @@ app.controller('ExperienceController',function($window, $scope, $rootScope, $rou
             $('.simptek').css("-o-filter", "");
             $('.simptek').css("-ms-filter", "");
             $('.simptek').css("filter", "");
+
+            $('.simptek').css("background-size", "");
         });
 
         $(".riverg").mouseenter(function(){
@@ -140,6 +184,11 @@ app.controller('ExperienceController',function($window, $scope, $rootScope, $rou
             $('.river').css("-o-filter", "blur(0px)");
             $('.river').css("-ms-filter", "blur(0px)");
             $('.river').css("filter", "blur(0px)");
+
+            if (windowWidth >= 1200)
+                $('.river').css("background-position", "0 -215px");
+            if (windowWidth < 1200)
+                $('.river').css("background-position", "0 0");
         });
 
         $(".riverg").mouseleave(function(){
@@ -159,6 +208,8 @@ app.controller('ExperienceController',function($window, $scope, $rootScope, $rou
             $('.river').css("-o-filter", "");
             $('.river').css("-ms-filter", "");
             $('.river').css("filter", "");
+
+            $('.river').css("background-position", "");
         });
   	
        	// check if the user is on second page.

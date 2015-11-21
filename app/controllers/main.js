@@ -19,9 +19,23 @@ router.get('/', function(req, res) {
 });
 
 /**
+	* Render Home Chinese Page
+	**/
+router.get('/homec', function(req, res) {
+	res.render('index');
+});
+
+/**
 	* Render About Page
 	**/
 router.get('/about', function(req, res) {
+	res.render('index');
+});
+
+/**
+	* Render About Chinese Page
+	**/
+router.get('/aboutc', function(req, res) {
 	res.render('index');
 });
 
@@ -33,9 +47,23 @@ router.get('/experience', function(req, res) {
 });
 
 /**
+	* Render Experience Chinese Page
+	**/
+router.get('/experiencec', function(req, res) {
+	res.render('index');
+});
+
+/**
 	* Render Contact Page
 	**/
 router.get('/contact', function(req, res) {
+	res.render('index');
+});
+
+/**
+	* Render Contact Chinese Page
+	**/
+router.get('/contactc', function(req, res) {
 	res.render('index');
 });
 

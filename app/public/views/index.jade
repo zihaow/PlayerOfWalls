@@ -44,11 +44,14 @@ html(ng-app='zihaow')
 
 	body
 		.footer(ng-controller="MainController")
+			.language-container
+				a(ng-click="chinese()", style="left: 0px;", ng-href="{{ transfer }}") 中文
+				a(ng-click="english()", style="left: 40px;", ng-href="{{ transfer }}") English
 			.navigation-container
-				a(href='/') Home
-				a(href='/about') About
-				a(href='/experience') Experience
-				a(href='/contact') Contact
+				a(ng-href="{{ homePage }}") {{ homeText }}
+				a(ng-href="{{ aboutPage }}") {{ aboutText }}
+				a(ng-href="{{ experiencePage }}") {{ experienceText }}
+				a(ng-href="{{ contactPage }}") {{ contactText }}
 			.social-container(ng-show="showSocial")
 				a(href='https://www.flickr.com/photos/100481265@N05/', target='blank')
 					img(src='flickr.png', width='38', height='38')
