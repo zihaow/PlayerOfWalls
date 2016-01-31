@@ -18,11 +18,23 @@ app.controller('ContactController',function($scope, $rootScope, $route, $http){
 	$scope.clickFirst = function() {
 		firstStar = true;
 		$('.star1p').css("color", "#AB3200");
+
+		if (firstStar === true && secondStar === true && thirdStar === true){
+			$scope.showContact = true;
+			$scope.gotIt = true;
+			$scope.showText = false;
+		}
 	};
 
 	$scope.clickSecond = function() {
 		secondStar = true;
 		$('.star2p').css("color", "#AB3200");
+
+		if (firstStar === true && secondStar === true && thirdStar === true){
+			$scope.showContact = true;
+			$scope.gotIt = true;
+			$scope.showText = false;
+		}
 	};
 
 	$scope.clickThird = function() {

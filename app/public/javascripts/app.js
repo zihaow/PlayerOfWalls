@@ -66,6 +66,11 @@ app.config(function($routeProvider, $locationProvider) {
     .when('/contactc', {
         templateUrl : 'pages/contactc',
         controller  : 'ContactController'
+    })
+
+    .when('/story', {
+        templateUrl : 'pages/story',
+        controller  : 'StoryController'
     });
 
     //use the HTML5 History API

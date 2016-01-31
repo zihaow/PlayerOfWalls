@@ -61,6 +61,13 @@ router.get('/contact', function(req, res) {
 });
 
 /**
+	* Render Story Page
+	**/
+router.get('/story', function(req, res) {
+	res.render('index');
+});
+
+/**
 	* Render Contact Chinese Page
 	**/
 router.get('/contactc', function(req, res) {
