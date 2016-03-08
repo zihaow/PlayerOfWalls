@@ -1,25 +1,35 @@
-.image-container(ng-show="showBackground")
-.skip-photo(ng-show="skipPhoto")
-  a(ng-click="skip()") Skip
-.text-container(class="fadeInDown animated")
-  p I consider every photograph taken as an act of act.
-  p.name Zihao Wu
-ul.cb-slideshow(ng-show="showSlideShow")
-  li
-    span.fadeInDown.animated
-    div English Bay Sunset
-  li
-    span.fadeInDown.animated
-    div Amazing Calgary
-  li
-    span.fadeInDown.animated
-    div Cuba's Winter
-  li
-    span.fadeInDown.animated
-    div Wonderland
-  li
-    span.fadeInDown.animated
-    div Downtown Halifax
-  li
-    span.fadeInDown.animated
-    div Home Sweet Home
+.student_info
+	input(ng-model="student_name_i", placeholder="Name", style="top:10px;")
+	input(ng-model="student_id_i", placeholder="ID", style="top:40px;")
+	.button-container
+		a(ng-click="submit(student_name_i, student_id_i)", style="left: calc(25% - 40px);") Submit
+		a(ng-click="delete(student_name_i, student_id_i)", style="left: calc(75% - 40px);") Delete
+	.detail
+		ul(ng-repeat="(key,value) in students")
+			li {{ value.name }} : {{ value.ID }}
+			a(ng-click="showThisStudent(value.name, value.ID)") Image Management Console
+.console(ng-show="showConsole")
+	p(style="margin-left:3%;") {{ student_name }}
+	p(style="margin-left:3%;") {{ student_id }}
+	input(ng-model="image_url", placeholder="Or Enter Image URL")
+	a.uploadButton(ng-click="uploadImage(image_url)") Upload
+	a.uploadButton(ng-click="removeAllImages()", style="top:190px;") Remove All Images
+	.image-container
+		ul(ng-repeat="image in thisStudent")
+			li 
+				img(src="{{ image.image_url }}")
+				p ID : {{ image.image_id }}
+				a(ng-click="deleteThisImage(image)") Delete
+	button(type='file', ngf-select='uploadFiles($file, $invalidFiles)', accept='image/*', ngf-max-height='1000', ngf-max-size='3MB')
+		| Select File
+		br
+		br
+		|   File:
+		div(style='font:smaller')
+			| {{f.name}} {{errFile.name}} {{errFile.$error}} {{errFile.$errorParam}}
+			span.progress(ng-show='f.progress >= 0')
+				div(style='width:{{f.progress}}%', ng-bind="f.progress + '%'")
+		|   {{errorMsg}}
+h1 Select a player to view
+h2 Or insert a new player
+

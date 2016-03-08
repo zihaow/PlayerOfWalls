@@ -1,4 +1,4 @@
-html(ng-app='zihaow')
+html(ng-app='playersOfWall')
 	head
 		//- META DATA
 		meta(charset='utf-8')
@@ -6,14 +6,10 @@ html(ng-app='zihaow')
 
 		//- BASE URL
 		base(href='/')
-		//-base(href='/~zihaow')
+		
 		//- favicon
 		intercept-url(pattern='/favicon.ico', access='ROLE_ANONYMOUS')
-		title Zihao Wu
-
-		//- Loader
-		link(rel='stylesheet', href='http://css-spinners.com/css/spinner/gauge.css', type='text/css')
-		link(rel='stylesheet', href='http://css-spinners.com/css/spinner/circles.css', type='text/css')
+		title Wall of Players
 
 		//- Font
 		link(href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah', rel='stylesheet', type='text/css')
@@ -30,43 +26,16 @@ html(ng-app='zihaow')
 		script(src='angular-route.js')
 		script(src='app.js')
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js')
+		script(src='https://angular-file-upload.appspot.com/js/ng-file-upload.js')
+		script(src='https://angular-file-upload.appspot.com/js/ng-file-upload-shim.js')
 		
 		//- Controllers
-		script(src='controllers/MainController.js')
 		script(src='controllers/HomeController.js')
-		script(src='controllers/AboutController.js')
-		script(src='controllers/ExperienceController.js')
-		script(src='controllers/ContactController.js')
-		script(src='controllers/StoryController.js')
-
-		//- Directives
-		script(src='directives/scroll.js')
-		script(src='directives/scrollCheck.js')
-
+	
 	body
-		.footer(ng-controller="MainController")
-			.language-container
-				a(ng-click="chinese()", style="left: 0px;", ng-href="{{ transfer }}") 中文
-				a(ng-click="english()", style="left: 40px;", ng-href="{{ transfer }}") English
-			.navigation-container
-				a(ng-href="{{ homePage }}") {{ homeText }}
-				a(ng-href="{{ aboutPage }}") {{ aboutText }}
-				a(ng-href="{{ experiencePage }}") {{ experienceText }}
-				a(ng-href="{{ contactPage }}") {{ contactText }}
-			.social-container(ng-show="showSocial")
-				a(href='https://www.flickr.com/photos/100481265@N05/', target='blank')
-					img(src='flickr.png', width='38', height='38')
-				a(href='https://www.facebook.com/zihao.wu.921', target='blank')
-					img(src='facebook.png', width='35', height='35')
-				a(href='https://ca.linkedin.com/pub/zihao-wu/92/920/854', target='blank')
-					img(src='linkin.png', width='38', height='38')
-
 		//- Angular View
 		.content(ng-view)
-		.showloadingView(ng-if="loadingView") 
-			.loading(style="position: absolute; width: 200px; height: 200px; top: calc(50% - 100px); left: calc(50% - 100px);")
-				.circles-loader(style="position: absolute; background-color: #F8971D; top: calc(50% - 16px); left: calc(50% - 20px);") 
-
+		
 		script.
 			new WOW().init();
 		

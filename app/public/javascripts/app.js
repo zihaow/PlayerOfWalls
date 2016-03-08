@@ -1,28 +1,5 @@
 // Create the module.
-var app = angular.module('zihaow', ['ngRoute']);
-
-
-app.run(['$rootScope', '$timeout', function($root, $timeout) {
-    $root.$on('$routeChangeStart', function(e, curr, prev) { 
-    if (curr.$$route && curr.$$route.resolve) {
-      // Show a loading message until promises aren't resolved
-      $root.loadingView = true;
-      console.log("loading required");
-    }
-    });
-    $root.$on('$routeChangeSuccess', function(e, curr, prev) { 
-    // Hide loading message
-    console.log("loading done");
-    $root.loadingView = false;
-    /*
-    $root.loadingView = true;
-    $timeout(function() {
-        $root.loadingView = false;
-    }, 2000);
-    */
-    });
-}]);
-
+var app = angular.module('playersOfWall', ['ngRoute','ngFileUpload']);
 
 // Configure different routes
 app.config(function($routeProvider, $locationProvider) {
@@ -33,44 +10,24 @@ app.config(function($routeProvider, $locationProvider) {
         controller  : 'HomeController'
     })
 
-    .when('/homec', {
-        templateUrl : 'pages/homec',
-        controller  : 'HomeController'
+    .when('/student', {
+        templateUrl : 'student'
     })
 
-    .when('/about', {
-        templateUrl : 'pages/about',
-        controller  : 'AboutController'
+    .when('/student_one', {
+        templateUrl : 'student_one'
     })
 
-    .when('/aboutc', {
-        templateUrl : 'pages/aboutc',
-        controller  : 'AboutController'
+    .when('/upload_image', {
+        templateUrl : 'upload_image'
     })
 
-    .when('/experience', {
-        templateUrl : 'pages/experience',
-        controller  : 'ExperienceController'
+    .when('/upload_image_url', {
+        templateUrl : 'upload_image_url'
     })
 
-    .when('/experiencec', {
-        templateUrl : 'pages/experiencec',
-        controller  : 'ExperienceController'
-    })
-
-    .when('/contact', {
-        templateUrl : 'pages/contact',
-        controller  : 'ContactController'
-    })
-
-    .when('/contactc', {
-        templateUrl : 'pages/contactc',
-        controller  : 'ContactController'
-    })
-
-    .when('/story', {
-        templateUrl : 'pages/story',
-        controller  : 'StoryController'
+    .when('/delete_image', {
+        templateUrl : 'delete_image'
     });
 
     //use the HTML5 History API

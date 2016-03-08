@@ -1,21 +1,20 @@
 {
-  "name": "zihaow",
+  "name": "playersOfWall",
   "version": "0.0.1",
-  "description": "zihaow",
+  "description": "playersOfWall",
   "main": "app.js",
   "scripts": {
-    "start" : "PORT=3000 node app.js | bunyan",
-    "prod"  : "PORT=3000 NODE_ENV=production node app.js | bunyan",
-    "debug" : "PORT=3000 node-debug app.js | bunyan",
-    "test"  : "PORT=3000 mocha 'app/test/**/*.js' --reporter spec"
+    "start": "node app.js"
   },
   "author": "Zihao Wu",
   "dependencies": {
-    "bunyan": "^1.5.1",
     "angular": "^1.4.3",
+    "body-parser": "^1.15.0",
+    "bunyan": "^1.5.1",
     "express": "~4.13.1",
-    "node-sass-middleware": "^0.9.6",
     "jade": "~1.11.0",
-    "jquery-ui": "^1.10.5"
+    "jquery-ui": "^1.10.5",
+    "multer": "^1.1.0",
+    "node-sass-middleware": "^0.9.6"
   }
 }

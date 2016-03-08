@@ -1,380 +1,208 @@
-.text-container {
-	width: 350px;
-	height: 100px;
+.student_info{
+  position: absolute;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  border-right: 1px solid #ECE7E7;
+
+  .button-container{
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+
+    a {
+      padding: 0px 8px;
+      border: 1px solid #337ab7;
+      border-radius: 3px;
+      font-size: 17px;
+      position: absolute;
+      top: 10px;
+      width: 80px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    a:hover {
+      transition: 0.5s;
+      -moz-transition: 0.5s;
+      background-color: #337ab7;
+      color: #fff;
+    }
+  }
+
+  input {
+  	outline: none;
+    width: calc(50% + 80px);
+    left: calc(25% - 40px);
+    position: absolute;
+  }
+
+  .detail{
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+
+    ul{
+      list-style-type: none;
+      a {
+    		border: 1px solid #337ab7;
+        padding: 1px 7px;
+        border-radius: 2px;
+        cursor: pointer;
+        text-decoration: none !important;
+    	}
+
+    	a:hover {
+    		transition: 0.5s;
+    		-moz-transition: 0.5s;
+    		background-color: #337ab7;
+    		color: #fff;
+    	}
+    }
+  }
+  .thumb {
+    width: 24px;
+    height: 24px;
+    float: none;
+    position:relative;
+    top: 7px;
+  }
+
+  form .progress {
+    line-height: 15px;
+  }
+
+  .progress {
+    display: inline-block;
+    width: 100px;
+    border: 3px groove #CCC;
+
+    div{
+    	font-size: smaller;
+      background: orange;
+      width: 0;
+    }
+  }
+}
+
+h1 {
+  position: absolute;
+  left: calc(50% - 123.4px);
+  top: calc(50% - 35px);
+  font-size: 50px;
+  font-weight: 100;
+  margin: 0;
+}
+
+h2 {
+  position: absolute;
+  left: calc(50% - 79px);
+  top: calc(50% + 25px);
+  font-size: 40px;
+  font-weight: 100;
+  margin: 0;
+}
+
+.console {
+	width: calc(100% - 300px);
+	height: 100%;
 	position:absolute;
-	left: 50%;
-	top: 20%;
-	margin: 0 0 0 -175px;
+	top: 0;
+	left: 300px;
+	background-color: #fff;
+	overflow: auto;
+  z-index: 100;
 
-	p {
-		font-size: 22px;
-		font-weight: 400;
-	}
-}
-
-.skip-photo {
-	position: absolute;
-	z-index: 10;
-	top: calc(50% - 21px);
-  left: calc(50% - 27.5px);
-
-	a {
-		text-decoration: none;
-		font-size: 30px;
-		cursor: pointer;
-		color: #ffffff;
-	}
-}
-
-.name {
-	font-size: 15px;
-	font-weight: 100;
-	float: right;
-}
-
-.cb-slideshow,
-.cb-slideshow:after { 
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0px;
-	left: 0px;
-	z-index: 0; 
-	list-style-type: none;
-}
-
-.cb-slideshow:after { 
-	content: '';
-}
-
-.cb-slideshow li span { 
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	color: transparent;
-	background-size: cover;
-	background-position: 50% 50%;
-	background-repeat: none;
-	opacity: 0;
-	z-index: 0;
-	-webkit-backface-visibility: hidden;
-	-webkit-animation: imageAnimation 36s linear  0s;
-	-moz-animation: imageAnimation 36s linear  0s;
-	-o-animation: imageAnimation 36s linear  0s;
-	-ms-animation: imageAnimation 36s linear  0s;
-	animation: imageAnimation 36s linear  0s; 
-}
-
-.cb-slideshow li div { 
-	z-index: 1000;
-	position: absolute;
-	bottom: 24px;
-	left: 0px;
-	width: 100%;
-	text-align: center;
-	opacity: 0;
-	color: #fff;
-	-webkit-animation: titleAnimation 36s linear  0s;
-	-moz-animation: titleAnimation 36s linear  0s;
-	-o-animation: titleAnimation 36s linear  0s;
-	-ms-animation: titleAnimation 36s linear  0s;
-	animation: titleAnimation 36s linear  0s; 
-}
-
-.cb-slideshow li div{ 
-	font-family: 'Open Sans', 'Helvetica';
-	font-size: 15px;
-	padding: 0;
-	line-height: 200px; 
-}
-
-.cb-slideshow li:nth-child(1) span { 
-	background-image: url('greatsunset.jpg') 
-}
-
-.cb-slideshow li:nth-child(2) span { 
-	background-image: url('cal.jpg');
-	-webkit-animation-delay: 6s;
-	-moz-animation-delay: 6s;
-	-o-animation-delay: 6s;
-	-ms-animation-delay: 6s;
-	animation-delay: 6s; 
-}
-.cb-slideshow li:nth-child(3) span { 
-	background-image: url('beach_small.jpg');
-	-webkit-animation-delay: 12s;
-	-moz-animation-delay: 12s;
-	-o-animation-delay: 12s;
-	-ms-animation-delay: 12s;
-	animation-delay: 12s; 
-}
-
-.cb-slideshow li:nth-child(4) span { 
-	background-image: url('cape_small.jpg');
-	-webkit-animation-delay: 18s;
-	-moz-animation-delay: 18s;
-	-o-animation-delay: 18s;
-	-ms-animation-delay: 18s;
-	animation-delay: 18s; 
-}
-.cb-slideshow li:nth-child(5) span { 
-	background-image: url('halifax_small.jpg');
-	-webkit-animation-delay: 24s;
-	-moz-animation-delay: 24s;
-	-o-animation-delay: 24s;
-	-ms-animation-delay: 24s;
-	animation-delay: 24s; 
-}
-.cb-slideshow li:nth-child(6) span { 
-	background-image: url('home_small.jpg');
-	-webkit-animation-delay: 30s;
-	-moz-animation-delay: 30s;
-	-o-animation-delay: 30s;
-	-ms-animation-delay: 30s;
-	animation-delay: 30s; 
-}
+  .image-container {
+    position: absolute;
+    width: 94%;
+    left: 3%;
+    height: auto;
+    top: 230px;
     
-.cb-slideshow li:nth-child(2) div { 
-	-webkit-animation-delay: 6s;
-	-moz-animation-delay: 6s;
-	-o-animation-delay: 6s;
-	-ms-animation-delay: 6s;
-	animation-delay: 6s; 
-}
-.cb-slideshow li:nth-child(3) div { 
-	-webkit-animation-delay: 12s;
-	-moz-animation-delay: 12s;
-	-o-animation-delay: 12s;
-	-ms-animation-delay: 12s;
-	animation-delay: 12s; 
-}
 
-.cb-slideshow li:nth-child(4) div { 
-	-webkit-animation-delay: 18s;
-	-moz-animation-delay: 18s;
-	-o-animation-delay: 18s;
-	-ms-animation-delay: 18s;
-	animation-delay: 18s; 
-}
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
 
-.cb-slideshow li:nth-child(5) div { 
-	-webkit-animation-delay: 24s;
-	-moz-animation-delay: 24s;
-	-o-animation-delay: 24s;
-	-ms-animation-delay: 24s;
-	animation-delay: 24s; 
-}
+      img {
+        width: 100%;
+      }
 
-.cb-slideshow li:nth-child(6) div { 
-	-webkit-animation-delay: 30s;
-	-moz-animation-delay: 30s;
-	-o-animation-delay: 30s;
-	-ms-animation-delay: 30s;
-	animation-delay: 30s; 
-}
+      a{
+        position: relative;
+        top: -7px;
+        left: 0;
+        border: 1px solid #000;
+        font-size: 20px;
+        padding: 0px 10px;
+        border-radius: 3px;
+        font-weight: 100;
+      }
 
-/* Animation for the slideshow images */
-@-webkit-keyframes imageAnimation { 
-	0% { 
-		opacity: 0;
-		-webkit-animation-timing-function: ease-in; 
-	}
-	8% { 
-		opacity: 1;
-		-ebkit-animation-timing-function: ease-out; 
-	}
-	17% { 
-		opacity: 1 
-	}
-	25% { 
-		opacity: 0 
-	}
-	100% { 
-		opacity: 0 
-	}
-}
+      a:hover{
+        transition: 0.5s;
+        -moz-transition: 0.5s;
+        background-color: #000;
+        color: #fff;
+      }
+    }
+  }
 
-@-moz-keyframes imageAnimation { 
-	0% { 
-		opacity: 0;
-		-moz-animation-timing-function: ease-in; 
-	}
-	8% { 
-		opacity: 1;
-		-moz-animation-timing-function: ease-out; 
-	}
-	17% { 
-		opacity: 1 
-	}
-	25% { 
-		opacity: 0 
-	}
-	100% { 
-		opacity: 0 
-	}
-}
+  button {
+  	width: 300px;
+    position: absolute;
+    top: 10px;
+    right: 3%;
+  }
+  
+  input {
+  	position: absolute;
+    top: 100px;
+    width: 94%;
+    height: 30px;
+    left: 3%;
+  }
 
-@-o-keyframes imageAnimation { 
-	0% { 
-		opacity: 0;
-		-o-animation-timing-function: ease-in; 
-	}
-	8% { 
-		opacity: 1;
-		-o-animation-timing-function: ease-out; 
-	}
-	17% { 
-		opacity: 1 
-	}
-	25% { 
-		opacity: 0 
-	}
-	100% { 
-		opacity: 0 
+  .uploadButton {
+  	position: absolute;
+    top: 150px;
+    width: 94%;
+    height: 30px;
+    left: 3%;
+    text-align: center;
+    border: 1px solid #000;
+    font-weight: 300;
+    border-radius: 3px;
+  }
+
+  .uploadButton:hover {
+  	transition: 0.5s;
+		-moz-transition: 0.5s;
+		background-color: #000;
+		color: #fff;
+  }
+
+  
+  p {
+  	display: block;
+    font-size: 25px;
+    font-weight: 100;
+  }
+
+	a { 
+		color: #000;
+		font-size: 20px;
+		cursor: pointer;
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		text-decoration: none !important;
 	}
 }
-
-@-ms-keyframes imageAnimation { 
-	0% { 
-		opacity: 0;
-		-ms-animation-timing-function: ease-in; 
-	}
-	8% { 
-		opacity: 1;
-		-ms-animation-timing-function: ease-out;
-	}
-	17% { 
-		opacity: 1 
-	}
-	25% { 
-		opacity: 0 
-	}
-	100% { 
-		opacity: 0 
-	}
-}
-
-@keyframes imageAnimation { 
-	0% { 
-		opacity: 0;
-		animation-timing-function: ease-in; 
-	}
-	8% { 
-		opacity: 1;
-		animation-timing-function: ease-out; 
-	}
-	17% { 
-		opacity: 1 
-	}
-	25% { 
-		opacity: 0 
-	}
-	100% { 
-		opacity: 0 
-	}
-}
-
-/* Animation for the title */
-@-webkit-keyframes titleAnimation { 
-	0% { opacity: 0 }
-	8% { opacity: 1 }
-	17% { opacity: 1 }
-	19% { opacity: 0 }
-	100% { opacity: 0 }
-}
-
-@-moz-keyframes titleAnimation { 
-	0% { opacity: 0 }
-	8% { opacity: 1 }
-	17% { opacity: 1 }
-	19% { opacity: 0 }
-	100% { opacity: 0 }
-}
-
-@-o-keyframes titleAnimation { 
-	0% { opacity: 0 }
-	8% { opacity: 1 }
-	17% { opacity: 1 }
-	19% { opacity: 0 }
-	100% { opacity: 0 }
-}
-
-@-ms-keyframes titleAnimation { 
-	0% { opacity: 0 }
-	8% { opacity: 1 }
-	17% { opacity: 1 }
-	19% { opacity: 0 }
-	100% { opacity: 0 }
-}
-
-@keyframes titleAnimation { 
-	0% { opacity: 0 }
-	8% { opacity: 1 }
-	17% { opacity: 1 }
-	19% { opacity: 0 }
-	100% { opacity: 0 }
-}
-
-/* Show at least something when animations not supported */
-.no-cssanimations .cb-slideshow li span{
-	opacity: 1;
-}
-
-@media(max-width:767px) { 
-	.cb-slideshow li div{ 
-		font-size: 10px 
-	}
-
-	.text-container {
-		p {
-			font-size: 18px;
-		}
-	}
-}
-
-@media(min-width:768px) { 
-	.cb-slideshow li div{ 
-		font-size: 10px 
-	}
-
-	.text-container {
-		p {
-			font-size: 18px;
-		}
-	}
-}
-
-@media(min-width:992px) { 
-	.cb-slideshow li div{ 
-		font-size: 14px 
-	}
-
-	.text-container {
-		p {
-			font-size: 20px;
-		}
-	}
-}
-
-@media(min-width:1200px) { 
-	.cb-slideshow li div{ 
-		font-size: 17px 
-	}
-
-	.text-container {
-		p {
-			font-size: 22px;
-		}
-	}
-}
-
-
-
-
-
-
-
-
 
