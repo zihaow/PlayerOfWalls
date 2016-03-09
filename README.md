@@ -1,0 +1,11 @@
+# PlayerOfWalls
+
+This is a Restful Web App to show images of varies NBA players. 
+You can play around with it by adding a new player, inserting 
+new images for your players. You can also delete a player, delete
+all images or just one image at your choice.
+
+## Player Of Walls Architecture
+Built using Node.js as the server, AngularJS on the front-end, 
+integrated with Cloudinary for image uploads and retrieves, storing
+player info on MongoDB with objectRocket enable.
