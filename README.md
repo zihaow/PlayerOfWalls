@@ -14,3 +14,6 @@ player info on MongoDB with objectRocket enable.
 1. Make sure you have node.js installed on your computer. (brew install node)
 2. npm install
 3. npm start
+
+Below is the page showing one player - Stephen Curry.
+![alt tag](http://res.cloudinary.com/zihaow/image/upload/v1457482334/Screen_Shot_2016-03-08_at_7.51.28_PM_reziqx.png)
