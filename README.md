@@ -9,3 +9,8 @@ all images or just one image at your choice.
 Built using Node.js as the server, AngularJS on the front-end, 
 integrated with Cloudinary for image uploads and retrieves, storing
 player info on MongoDB with objectRocket enable.
+
+## To run
+1. Make sure you have node.js installed on your computer. (brew install node)
+2. npm install
+3. npm start
